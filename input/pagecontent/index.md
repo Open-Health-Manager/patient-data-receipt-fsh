@@ -1,4 +1,4 @@
-The Patient Data Receipt Implementation Guide describes how organizations can provide collected health data to a health manager application that the individual has designated.
+The Patient Data Receipt Implementation Guide describes how organizations can provide collected health data in Standard Personal Health Record format to a health manager application that the individual has designated.
 
 ### Introduction
 

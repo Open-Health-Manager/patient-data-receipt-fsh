@@ -22,12 +22,12 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: "2.6"
-      - name: Install jekyll
-        run: gem install jekyll --no-document
-      - name: Install dependencies
-        run: npm install fsh-sushi --no-save
-      - name: Run fsh-sushi
-        run: ./node_modules/.bin/sushi .
+      # - name: Install jekyll
+      #  run: gem install jekyll --no-document
+      # - name: Install dependencies
+      #  run: npm install fsh-sushi --no-save
+      # - name: Run fsh-sushi
+      #  run: ./node_modules/.bin/sushi .
       # - name: Update ig-publisher
       #   run: ./_updatePublisher.sh
       # - name: Run ig-publisher

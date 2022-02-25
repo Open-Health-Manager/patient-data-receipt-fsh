@@ -3,7 +3,7 @@
   "name": "HealthDataReceipt",
   "package-id": "mitre.fhir.hm.pdr",
   "ig-ver": "0.1.0",
-  "date": "Fri, 25 Feb, 2022 08:33:05 -0500",
+  "date": "Fri, 25 Feb, 2022 16:14:14 -0500",
   "errs": 0,
   "warnings": 2,
   "hints": 0,
