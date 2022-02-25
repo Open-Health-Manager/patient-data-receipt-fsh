@@ -1,0 +1,25 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: mitre.fhir.hm.pdr
+canonical: https://github.com/Open-Health-Manager/patient-data-receipt-ig
+name: HealthDataReceipt
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2022+
+releaseLabel: ci-build
+license: CC0-1.0
+publisher:
+  name: Health Manager
+  url: https://mitre.sharepoint.com/sites/healthmanager
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Specification:
+    Implementation: Implementation.html
+  Artifacts: artifacts.html
