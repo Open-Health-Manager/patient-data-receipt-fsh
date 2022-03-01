@@ -1,4 +1,4 @@
-The Patient Data Receipt Implementation Guide describes how organizations can provide collected health data in Standard Personal Health Record format to a health manager application that the individual has designated.
+The Patient Data Receipt Implementation Guide describes how organizations can provide collected health data in Standard Patient Health Record format to a health manager application that the individual has designated.
 
 ### Introduction
 
@@ -25,7 +25,7 @@ This IG details two main components of the use case workflow
 1. Designation by the individual of a target for the capture of their health data, including what information the organization must collect and how they will use it to establish connectivity.
 2. Delivery of the data to the individual's designee, including the invocation required to effect the delivery.
 
-This IG does not specify the details of the encoding of the data and what specific data is in scope. Instead, it relies on the Standard Personal Health Record IG to detail content requirements.
+This IG does not specify the details of the encoding of the data and what specific data is in scope. Instead, it relies on the Standard Patient Health Record IG to detail content requirements.
 
 ### Audience/Expected Users
 

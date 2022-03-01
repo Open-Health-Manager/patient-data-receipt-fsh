@@ -10,4 +10,4 @@ To implement via [FHIR Messaging](https://www.hl7.org/fhir/messaging.html), coll
 - the patient data receipt event uri (`urn:mitre:healthmanager:pdr`)
 - the individual's designated account in the account extension.
 
-The rest of the contents of the bundle SHALL conform to the Standard Personal Health Record IG.
+The rest of the contents of the bundle SHALL conform to the Standard Patient Health Record IG.
