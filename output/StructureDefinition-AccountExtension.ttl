@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "AccountExtension"];
   fhir:StructureDefinition.title [ fhir:value "Account Extension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-25T16:14:14-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-01T14:34:05-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Health Manager"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

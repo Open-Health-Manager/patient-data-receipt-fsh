@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "HealthDataReceipt"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-02-25T16:14:14-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-01T14:34:05-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Manager"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
