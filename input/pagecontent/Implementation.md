@@ -6,7 +6,7 @@ Organizations must collect
 - a FHIR base server URL 
 - the individual's account name on that FHIR server
 
-To implement via [FHIR Messaging](https://www.hl7.org/fhir/messaging.html), collecting organization SHALL send all data collected in a timely manner to the [`$process-message`](https://www.hl7.org/fhir/messageheader-operation-process-message.html) operation within the individual's designated destination endpoint. The operation SHALL be invoked asynchronously (http://server/base/$process-message?async=true). The MessageHeader of the provided bundle SHALL include
+To implement via [FHIR Messaging](https://www.hl7.org/fhir/messaging.html), collecting organization SHALL send all data collected in a timely manner to the [`$process-message`](https://www.hl7.org/fhir/messageheader-operation-process-message.html) operation within the individual's designated destination endpoint. The MessageHeader of the provided bundle SHALL include
 - the patient data receipt event uri (`urn:mitre:healthmanager:pdr`)
 - the individual's designated account in the account extension.
 
