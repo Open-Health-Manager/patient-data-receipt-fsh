@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PatientDataReceiptHeader"];
   fhir:StructureDefinition.title [ fhir:value "Patient Data Receipt Header"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-01T15:03:45-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-17T13:14:32-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Health Manager"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

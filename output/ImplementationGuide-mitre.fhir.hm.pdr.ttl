@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "HealthDataReceipt"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-01T15:03:45-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-17T13:14:32-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Manager"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -314,6 +314,51 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Account Extension" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Support specification of the target account for a patient data receipt message" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/MessageHeader/PDR-MessageHeader-1>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/PDR-MessageHeader-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-MessageHeader-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example patient data receipt message header" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader";
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/pdr-message>;
+         fhir:Reference.reference [ fhir:value "Bundle/pdr-message" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR Message Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a full patient data receipt message" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Procedure/pdr-create-colonoscopy>;
+         fhir:Reference.reference [ fhir:value "Procedure/pdr-create-colonoscopy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR RESTful Create Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a RESTful create of an individual procedure as a patient data receipt" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

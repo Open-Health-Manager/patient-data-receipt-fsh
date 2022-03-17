@@ -140,26 +140,57 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#via-fhir-messaging" id="markdown-toc-via-fhir-messaging">Via FHIR Messaging</a></li>
+  <li><a href="#via-fhir-restful-updates" id="markdown-toc-via-fhir-restful-updates">Via FHIR RESTful updates</a></li>
+</ul>
+
 </div>
-<p>This page lays out ways that organizations can deliver health data to an individual’s designee. Currently, there is only one way, which is through <a href="https://www.hl7.org/fhir/messaging.html">FHIR Messaging</a>, though other possible approaches are planned.</p>
+<p>This page lays out ways that organizations can deliver health data to an individual’s designee. Each implementation provides at minimum ways to communicate:</p>
+<ol>
+  <li>The account username of the target individual</li>
+  <li>The source organization</li>
+  <li>The data payload</li>
+</ol>
+
+<p>Currently, there is only one way, which is through <a href="https://www.hl7.org/fhir/messaging.html">FHIR Messaging</a>, though other possible approaches are planned.</p>
 
 <h3 id="via-fhir-messaging">Via FHIR Messaging</h3>
+
+<p>Organizations may combine a batch of data collected on a patient into a single collection to be provided to the patient’s health manager as a FHIR Message.</p>
 
 <p>Organizations must collect</p>
 <ul>
   <li>a FHIR base server URL</li>
-  <li>the individual’s account name on that FHIR server</li>
+  <li>the individual’s account username on that FHIR server</li>
 </ul>
 
 <p>To implement via <a href="https://www.hl7.org/fhir/messaging.html">FHIR Messaging</a>, collecting organization SHALL send all data collected in a timely manner to the <a href="https://www.hl7.org/fhir/messageheader-operation-process-message.html"><code class="language-plaintext highlighter-rouge">$process-message</code></a> operation within the individual’s designated destination endpoint. The MessageHeader of the provided bundle SHALL include</p>
 <ul>
   <li>the patient data receipt event uri (<code class="language-plaintext highlighter-rouge">urn:mitre:healthmanager:pdr</code>)</li>
-  <li>the individual’s designated account in the account extension.</li>
+  <li>the individual’s designated account username in the account extension (<code class="language-plaintext highlighter-rouge">https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension</code>).</li>
+  <li>the source organization identification in the source subfields</li>
 </ul>
 
-<p>The rest of the contents of the bundle SHALL conform to the Standard Patient Health Record IG.</p>
+<p>The rest of the instances in the bundle SHALL conform to the Standard Patient Health Record IG, communicating at minimum the specific FHIR profile(s) that each resource conforms to in meta.profile.</p>
+
+<h3 id="via-fhir-restful-updates">Via FHIR RESTful updates</h3>
+
+<p>Organizations may write data to the health manager using the create (type level) and update (instance) level interactions in the <a href="https://www.hl7.org/fhir/http.html">FHIR RESTful protocols</a> either individually or as part of a transaction (system) interaction.</p>
+
+<p>Organizations must collect</p>
+<ul>
+  <li>a FHIR base server URL</li>
+  <li>the individual’s account username on that FHIR server</li>
+</ul>
+
+<p>To implement via <a href="https://www.hl7.org/fhir/http.html">FHIR RESTful protocols</a>, collecting organization SHALL write all data collected in a timely manner via resource-level updates, type-level creates, or system-level transactions that contains a set of resource-level updates and type-level creates. Each interaction SHALL include</p>
+<ul>
+  <li>the individual’s designated account username in <code class="language-plaintext highlighter-rouge">meta.extension(url=https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension</code>)</li>
+  <li>the source organization in meta.source</li>
+  <li>the specific profile used to represent the data in meta.profile</li>
+</ul>
 
 
 
@@ -185,7 +216,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 1, 2022 15:03-0500">2022-03-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 17, 2022 13:14-0400">2022-03-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

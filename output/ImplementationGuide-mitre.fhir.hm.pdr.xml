@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="HealthDataReceipt"/>
   <status value="draft"/>
-  <date value="2022-03-01T15:03:45-05:00"/>
+  <date value="2022-03-17T13:14:32-04:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>
@@ -210,6 +210,39 @@
       </reference>
       <name value="Account Extension"/>
       <description value="Support specification of the target account for a patient data receipt message"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/PDR-MessageHeader-1"/>
+      </reference>
+      <name value="PDR-MessageHeader-1"/>
+      <description value="An example patient data receipt message header"/>
+      <exampleCanonical value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/pdr-message"/>
+      </reference>
+      <name value="PDR Message Example"/>
+      <description value="Example of a full patient data receipt message"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/pdr-create-colonoscopy"/>
+      </reference>
+      <name value="PDR RESTful Create Example"/>
+      <description value="Example of a RESTful create of an individual procedure as a patient data receipt"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

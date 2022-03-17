@@ -36,6 +36,15 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Bundle.entry.resource.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
+      "Bundle.entry.resource"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -54,8 +63,25 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource"
+    ],
+    "http://synthetichealth.github.io/synthea/disability-adjusted-life-years": [
+      "Bundle.entry.resource"
+    ],
+    "http://synthetichealth.github.io/synthea/quality-adjusted-life-years": [
+      "Bundle.entry.resource"
+    ],
     "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension": [
-      "MessageHeader"
+      "Bundle.entry.resource",
+      "MessageHeader",
+      "Procedure.meta"
     ]
   }
 }
