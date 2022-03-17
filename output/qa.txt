@@ -3,7 +3,7 @@
 
 err = 24, warn = 13, info = 2
 IG Publisher Version: 1.1.104 Out of date - current version is 1.1.112
-Generated Thu Mar 17 13:14:53 EDT 2022. FHIR version 4.0.1 for mitre.fhir.hm.pdr#0.1.0 (canonical = https://github.com/Open-Health-Manager/patient-data-receipt-ig)
+Generated Thu Mar 17 13:27:16 EDT 2022. FHIR version 4.0.1 for mitre.fhir.hm.pdr#0.1.0 (canonical = https://github.com/Open-Health-Manager/patient-data-receipt-ig)
  Build Errors : 0 / 0 / 0
  /Users/knaden/Documents/HealthManager/source/patient-data-receipt-fsh/fsh-generated/resources/ImplementationGuide-mitre.fhir.hm.pdr : 0 / 0 / 1
  /Users/knaden/Documents/HealthManager/source/patient-data-receipt-fsh/fsh-generated/resources/messageheader-PDR-MessageHeader-1 : 0 / 0 / 1

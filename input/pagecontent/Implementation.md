@@ -3,7 +3,7 @@ This page lays out ways that organizations can deliver health data to an individ
 2. The source organization
 3. The data payload
 
-Currently, there is only one way, which is through [FHIR Messaging](https://www.hl7.org/fhir/messaging.html), though other possible approaches are planned.
+Currently, there is are two options, through [FHIR Messaging](https://www.hl7.org/fhir/messaging.html) and [FHIR RESTful protocols](https://www.hl7.org/fhir/http.html). Other options are planned and may augment or replace these options as this IG evolves.
 
 ### Via FHIR Messaging
 
