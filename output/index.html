@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -79,13 +79,19 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="usecases.html">Use Cases</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation.html">Implementation</a>
+        <a href="implementation.html">Implementation</a>
+      </li>
+      <li>
+        <a href="connectathon.html">Connectathons</a>
       </li>
     </ul>
   </li>
@@ -124,7 +130,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HealthDataReceipt - Local Development build (v0.1.0). See the <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HealthDataReceipt - Local Development build (v0.2.0). See the <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -139,7 +145,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr|0.1.0"/></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr|0.2.0"/></span>
       </td>
     </tr>
 
@@ -155,7 +161,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-03-17
+            as of 2022-04-07
           
         
       </td>
@@ -182,7 +188,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#use-case" id="markdown-toc-use-case">Use Case</a></li>
   <li><a href="#principles" id="markdown-toc-principles">Principles</a></li>
   <li><a href="#coverage" id="markdown-toc-coverage">Coverage</a></li>
   <li><a href="#audienceexpected-users" id="markdown-toc-audienceexpected-users">Audience/Expected Users</a></li>
@@ -194,12 +199,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="introduction">Introduction</h3>
 
 <p>As individuals, we are each responsible for engaging in our health and working with ourselves, our families, our communities, and health care organization to get the care we need. Receiving appropriate care from all parties requires context and the details about your health. Learning and understanding that context requires data and that data should travel with you and be accessible with your permission to those who provide your care. In order for your data to travel with you, people, devices, and organizations must provide data that they have collected to you in a standardized format, allowing you and your designated health manager to incorporate it and make it available to others assisting in your care.</p>
-
-<h3 id="use-case">Use Case</h3>
-
-<p>John Smith signs up for an online service called a Health Manager that promises to help him with his health and healthcare by tying together his health data in one place and giving him control over it, including the ability to correct, enrich, and share it. Upon signing up, Health Manager informs John that organization that collect his health data are required to make it available to him and that he can designate Health Manager as the recipient and custodian of his health data. John starts with his smart phone, which tracks some health data such as a activity and how much he uses his phone. The next time he visits his PCP, John asks about making this designation and successfully records Health Manager as the destination for data collected by his PCP. He gradually discovers other apps, services, and organizations that he interacts with are able to sent his data to his Health Manager and he signs as many of them up as he can.</p>
-
-<p>In response, data starts flowing into his Health Manager. His smart phone provides a daily summary of his per-app usage of his phone and other movement data. Each time he sees his doctor or gets a test result, that information flows into his Health Manager as soon as it gets recorded. Other organizations provide additional health-related information, helping to build a detailed record of John’s health all under his control and for his use.</p>
 
 <h3 id="principles">Principles</h3>
 
@@ -251,11 +250,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-<<<<<<< HEAD:docs/index.html
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 10:41-0500">2022-04-07</span>
-=======
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 17, 2022 13:26-0400">2022-03-17</span>
->>>>>>> main:output/index.html
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 11:11-0500">2022-04-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
