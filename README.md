@@ -19,3 +19,17 @@ cd patient-data-receipt-fsh
 # view the index page
 open output/index.html
 ```
+
+#### Use Cases  
+
+- Over the Counter Medications (Claim)
+- Restaurants & General Commerce (Immunization)
+- Patient Intake (Patient)
+- Specialist Consultation (Bundle)
+
+
+#### Transport Mechanism  
+
+- QR Codes  
+- RFID 
+- Bluetooth AirDrop  

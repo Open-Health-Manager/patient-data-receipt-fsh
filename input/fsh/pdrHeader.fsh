@@ -1,7 +1,7 @@
 
 Profile: PatientDataReceiptHeader
 Parent: MessageHeader
-Title: "Patient Data Receipt Header"
+Title: "PDR Header"
 Description: "Message Header for a Patient Data Receipt."
 * event[x] only uri
 * eventUri = "urn:mitre:healthmanager:pdr" 
