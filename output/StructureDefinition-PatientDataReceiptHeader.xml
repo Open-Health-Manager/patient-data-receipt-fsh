@@ -17,15 +17,11 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="PatientDataReceiptHeader"/>
-  <title value="Patient Data Receipt Header"/>
+  <title value="PDR - Message Header"/>
   <status value="active"/>
-<<<<<<< HEAD:docs/StructureDefinition-PatientDataReceiptHeader.xml
-  <date value="2022-04-07T10:41:20-05:00"/>
-=======
-  <date value="2022-03-17T13:26:51-04:00"/>
->>>>>>> main:output/StructureDefinition-PatientDataReceiptHeader.xml
+  <date value="2022-04-07T11:11:08-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>
@@ -80,8 +76,8 @@
         <key value="dom-3"/>
         <severity value="error"/>
         <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"/>
-        <expression value="contained.where(((&#39;#&#39;+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = &#39;#&#39;).exists() or descendants().where(as(canonical) = &#39;#&#39;).exists() or descendants().where(as(canonical) = &#39;#&#39;).exists()).not()).trace(&#39;unmatched&#39;, id).empty()"/>
-        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat(&#39;#&#39;, $contained/*/id/@value) or descendant::f:reference[@value=&#39;#&#39;])]))"/>
+        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"/>
+        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
@@ -179,7 +175,7 @@
       <path value="MessageHeader.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."/>
-      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it&#39;s narrative along with other profiles, value sets, etc."/>
+      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -199,7 +195,7 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
-      <isModifierReason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it&#39;s meaning or interpretation"/>
+      <isModifierReason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation"/>
       <isSummary value="true"/>
     </element>
     <element id="MessageHeader.language">
@@ -372,7 +368,7 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <mustSupport value="true"/>
@@ -381,7 +377,7 @@
     <element id="MessageHeader.modifierExtension">
       <path value="MessageHeader.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element&#39;s descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
       <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
       <alias value="extensions"/>
@@ -641,7 +637,7 @@
     <element id="MessageHeader.destination.modifierExtension">
       <path value="MessageHeader.destination.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element&#39;s descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
       <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
       <alias value="extensions"/>
@@ -712,7 +708,7 @@
       </mapping>
       <mapping>
         <identity value="rim"/>
-        <map value="unique(./entity[determinerCode=&quot;INST&quot; and (classCode=(&quot;DEV&quot;, &quot;PSN&quot;, &quot;ORG&quot;]/name[type=&#39;ST&#39; and isNormalDatatype()])"/>
+        <map value="unique(./entity[determinerCode=&quot;INST&quot; and (classCode=(&quot;DEV&quot;, &quot;PSN&quot;, &quot;ORG&quot;]/name[type='ST' and isNormalDatatype()])"/>
       </mapping>
     </element>
     <element id="MessageHeader.destination.target">
@@ -784,7 +780,7 @@
     <element id="MessageHeader.destination.receiver">
       <path value="MessageHeader.destination.receiver"/>
       <short value="Intended &quot;real-world&quot; recipient for the data"/>
-      <definition value="Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn&#39;t sufficient."/>
+      <definition value="Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn't sufficient."/>
       <requirements value="Allows routing beyond just the application level."/>
       <min value="0"/>
       <max value="1"/>
@@ -815,7 +811,7 @@
       </mapping>
       <mapping>
         <identity value="v2"/>
-        <map value="PRT-5:PRT-4=&#39;WAYR&#39; / PRT-8:PRT-4=&#39;WAYR&#39;"/>
+        <map value="PRT-5:PRT-4='WAYR' / PRT-8:PRT-4='WAYR'"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -861,7 +857,7 @@
       </mapping>
       <mapping>
         <identity value="v2"/>
-        <map value="PRT-5:PRT-4=&#39;WAYR&#39; / PRT-8:PRT-4=&#39;WAYR&#39;"/>
+        <map value="PRT-5:PRT-4='WAYR' / PRT-8:PRT-4='WAYR'"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -906,7 +902,7 @@
       </mapping>
       <mapping>
         <identity value="v2"/>
-        <map value="EVN-5 / ORC-10 / PRT-5:PRT-4=&#39;EP&#39; / ROL where ROL.3 is EP or ORC.10"/>
+        <map value="EVN-5 / ORC-10 / PRT-5:PRT-4='EP' / ROL where ROL.3 is EP or ORC.10"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -947,7 +943,7 @@
       </mapping>
       <mapping>
         <identity value="v2"/>
-        <map value="ORC-19 / PRT-5:PRT-4=&#39;AUT&#39; / ROL where ROL.3 is IP or ORC.12"/>
+        <map value="ORC-19 / PRT-5:PRT-4='AUT' / ROL where ROL.3 is IP or ORC.12"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -1059,7 +1055,7 @@
     <element id="MessageHeader.source.modifierExtension">
       <path value="MessageHeader.source.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element&#39;s descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
       <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
       <alias value="extensions"/>
@@ -1130,7 +1126,7 @@
       </mapping>
       <mapping>
         <identity value="rim"/>
-        <map value="unique(./entity[determinerCode=&quot;INST&quot; and classCode=&quot;DEV&quot;]/name[type=&#39;ST&#39; and isNormalDatatype()])"/>
+        <map value="unique(./entity[determinerCode=&quot;INST&quot; and classCode=&quot;DEV&quot;]/name[type='ST' and isNormalDatatype()])"/>
       </mapping>
     </element>
     <element id="MessageHeader.source.software">
@@ -1305,7 +1301,7 @@
       </mapping>
       <mapping>
         <identity value="v2"/>
-        <map value="ORC-12 /  PRT-5:PRT-4=&#39;OP&#39; /  PRT-8:PRT-4=&#39;OP&#39; / ROL where ROL.3 is RO or ORC.11"/>
+        <map value="ORC-12 /  PRT-5:PRT-4='OP' /  PRT-8:PRT-4='OP' / ROL where ROL.3 is RO or ORC.11"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
@@ -1459,7 +1455,7 @@
     <element id="MessageHeader.response.modifierExtension">
       <path value="MessageHeader.response.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element&#39;s descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
       <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
       <alias value="extensions"/>

@@ -11,15 +11,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="AccountExtension"/>
   <title value="Account Extension"/>
   <status value="active"/>
-<<<<<<< HEAD:docs/StructureDefinition-AccountExtension.xml
-  <date value="2022-04-07T10:41:20-05:00"/>
-=======
-  <date value="2022-03-17T13:26:51-04:00"/>
->>>>>>> main:output/StructureDefinition-AccountExtension.xml
+  <date value="2022-04-07T11:11:08-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>
@@ -70,7 +66,7 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>

@@ -3,21 +3,56 @@
     "id": "mitre.fhir.hm.pdr",
     "type": "ImplementationGuide",
     "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "HealthDataReceipt"
   },
   {
     "id": "AccountExtension",
     "type": "StructureDefinition",
     "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "AccountExtension"
+  },
+  {
+    "id": "DehydratedBundle",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle",
+    "version": "0.2.0",
+    "name": "DehydratedBundle"
+  },
+  {
+    "id": "DehydratedDocumentManifest",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest",
+    "version": "0.2.0",
+    "name": "DehydratedDocumentManifest"
   },
   {
     "id": "PatientDataReceiptHeader",
     "type": "StructureDefinition",
     "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "PatientDataReceiptHeader"
+  },
+  {
+    "id": "PdrAppointmentReminder",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder",
+    "version": "0.2.0",
+    "name": "PdrAppointmentReminder"
+  },
+  {
+    "id": "PdrFinancialReceipt",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt",
+    "version": "0.2.0",
+    "name": "PdrFinancialReceipt"
+  },
+  {
+    "id": "VaccineCard",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard",
+    "version": "0.2.0",
+    "name": "VaccineCard"
   }
 ]
