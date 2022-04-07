@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mitre.fhir.hm.pdr",
+    "type": "ImplementationGuide",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr",
+    "version": "0.1.0",
+    "name": "HealthDataReceipt"
+  },
+  {
+    "id": "AccountExtension",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension",
+    "version": "0.1.0",
+    "name": "AccountExtension"
+  },
+  {
+    "id": "PatientDataReceiptHeader",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader",
+    "version": "0.1.0",
+    "name": "PatientDataReceiptHeader"
+  }
+]
