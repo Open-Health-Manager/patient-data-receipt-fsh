@@ -16,13 +16,13 @@
     "Bundle": [
       {
         "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle",
-        "title": "PDR - Dehydrated bundle."
+        "title": "PDR - Dehydrated Bundle"
       }
     ],
     "DocumentManifest": [
       {
         "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest",
-        "title": "PDR - Document Mainfest."
+        "title": "PDR - Document Manifest"
       }
     ],
     "MessageHeader": [

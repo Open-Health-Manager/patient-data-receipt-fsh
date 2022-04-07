@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "DehydratedDocumentManifest"];
-  fhir:StructureDefinition.title [ fhir:value "PDR - Document Mainfest."];
+  fhir:StructureDefinition.title [ fhir:value "PDR - Document Manifest"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-07T10:16:51-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-07T10:41:20-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Health Manager"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

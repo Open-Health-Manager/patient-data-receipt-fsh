@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "HealthDataReceipt"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-07T10:16:51-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-07T10:41:20-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Manager"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -310,7 +310,7 @@
          fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DehydratedBundle" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Dehydrated bundle." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Dehydrated Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data receipt payload structure containing a dehydrated Bundle resource, with links to external data sources." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -324,7 +324,7 @@
          fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DehydratedDocumentManifest" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Document Mainfest." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Document Manifest" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data receipt payload structure containing a dehydrated DocumentManifest resource, with links to external data sources." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

@@ -18,9 +18,9 @@
   "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle",
   "version": "0.1.0",
   "name": "DehydratedBundle",
-  "title": "PDR - Dehydrated bundle.",
+  "title": "PDR - Dehydrated Bundle",
   "status": "active",
-  "date": "2022-04-07T10:16:51-05:00",
+  "date": "2022-04-07T10:41:20-05:00",
   "publisher": "Health Manager",
   "contact": [
     {

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "HealthDataReceipt",
   "status": "draft",
-  "date": "2022-04-07T10:16:51-05:00",
+  "date": "2022-04-07T10:41:20-05:00",
   "publisher": "Health Manager",
   "contact": [
     {
@@ -327,7 +327,7 @@
         "reference": {
           "reference": "StructureDefinition/DehydratedBundle"
         },
-        "name": "PDR - Dehydrated bundle.",
+        "name": "PDR - Dehydrated Bundle",
         "description": "Data receipt payload structure containing a dehydrated Bundle resource, with links to external data sources.",
         "exampleBoolean": false
       },
@@ -341,7 +341,7 @@
         "reference": {
           "reference": "StructureDefinition/DehydratedDocumentManifest"
         },
-        "name": "PDR - Document Mainfest.",
+        "name": "PDR - Document Manifest",
         "description": "Data receipt payload structure containing a dehydrated DocumentManifest resource, with links to external data sources.",
         "exampleBoolean": false
       },
