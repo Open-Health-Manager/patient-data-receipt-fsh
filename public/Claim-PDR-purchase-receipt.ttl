@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/PDR-purchase-receipt> a fhir:Claim;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PDR-purchase-receipt"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-10-04T19:42:52.061-04:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PDR-purchase-receipt\" Version \"1\" Updated \"2018-10-04 07:42:52-0400\" </p></div><p><b>status</b>: active</p><p><b>type</b>: Over The Counter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claim-type.html\">Claim Type Codes</a>#over-the-counter)</span></p><p><b>use</b>: receipt</p><p><b>patient</b>: <a href=\"Patient/john-doe\">Patient/john-doe: John Doe</a></p><p><b>created</b>: 2018-10-04</p><p><b>provider</b>: <a href=\"Patient/acme-pharmacy\">Patient/acme-pharmacy: ACME Pharmacy</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><h3>SupportingInfos</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Medical Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-benefitcategory.html\">Benefit Category Codes</a>#1)</span></td><td><a href=\"Medication/zyrtec\">Medication/zyrtec: Zyrtec</a></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>false</td><td><a href=\"Coverage/self-pay\">Coverage/self-pay: Self-pay</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Expense <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-USCLS.html\">USCLS Codes</a>#99555)</span></p><p><b>serviced</b>: 2018-10-04</p><p><b>quantity</b>: 1</p></blockquote></div>"
+  ];
+  fhir:Claim.status [ fhir:value "active"];
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+       fhir:Coding.code [ fhir:value "over-the-counter" ];
+       fhir:Coding.display [ fhir:value "Over The Counter" ]
+     ]
+  ];
+  fhir:Claim.use [ fhir:value "receipt"];
+  fhir:Claim.patient [
+     fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Patient/john-doe>;
+     fhir:Reference.reference [ fhir:value "Patient/john-doe" ];
+     fhir:Reference.display [ fhir:value "John Doe" ]
+  ];
+  fhir:Claim.created [ fhir:value "2018-10-04"^^xsd:date];
+  fhir:Claim.provider [
+     fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Patient/acme-pharmacy>;
+     fhir:Reference.reference [ fhir:value "Patient/acme-pharmacy" ];
+     fhir:Reference.display [ fhir:value "ACME Pharmacy" ]
+  ];
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/processpriority" ];
+       fhir:Coding.code [ fhir:value "normal" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ];
+  fhir:Claim.supportingInfo [
+     fhir:index 0;
+     fhir:Claim.supportingInfo.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-benefitcategory" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Medical Care" ]
+       ]
+     ];
+     fhir:Claim.supportingInfo.valueReference [
+       fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Medication/zyrtec>;
+       fhir:Reference.reference [ fhir:value "Medication/zyrtec" ];
+       fhir:Reference.display [ fhir:value "Zyrtec" ]
+     ]
+  ];
+  fhir:Claim.insurance [
+     fhir:index 0;
+     fhir:Claim.insurance.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.insurance.focal [ fhir:value "false"^^xsd:boolean ];
+     fhir:Claim.insurance.coverage [
+       fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Coverage/self-pay>;
+       fhir:Reference.reference [ fhir:value "Coverage/self-pay" ];
+       fhir:Reference.display [ fhir:value "Self-pay" ]
+     ]
+  ];
+  fhir:Claim.item [
+     fhir:index 0;
+     fhir:Claim.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-USCLS" ];
+         fhir:Coding.code [ fhir:value "99555" ];
+         fhir:Coding.display [ fhir:value "Expense" ]
+       ]
+     ];
+     fhir:Claim.item.servicedDate [ fhir:value "2018-10-04"^^xsd:date ];
+     fhir:Claim.item.quantity [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+     ];
+     fhir:Claim.item.unitPrice [
+       fhir:Money.value [ fhir:value "12.95"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ];
+     fhir:Claim.item.net [
+       fhir:Money.value [ fhir:value "13.65"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ];
+  fhir:Claim.total [
+     fhir:Money.value [ fhir:value "13.65"^^xsd:decimal ];
+     fhir:Money.currency [ fhir:value "USD" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/PDR-purchase-receipt.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
