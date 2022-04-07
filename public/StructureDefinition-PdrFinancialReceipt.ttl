@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PdrFinancialReceipt"];
   fhir:StructureDefinition.title [ fhir:value "PDR - Financial Receipt"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-07T09:06:11-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-07T10:16:51-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Health Manager"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "https://mitre.sharepoint.com/sites/healthmanager" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Financial receipt, based off the Claim resource."];
+  fhir:StructureDefinition.description [ fhir:value "Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

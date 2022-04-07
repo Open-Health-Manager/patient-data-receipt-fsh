@@ -4,5 +4,5 @@
 Profile: PdrFinancialReceipt
 Parent: Claim
 Title: "PDR - Financial Receipt"
-Description: "Financial receipt, based off the Claim resource."
+Description: "Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource."
 

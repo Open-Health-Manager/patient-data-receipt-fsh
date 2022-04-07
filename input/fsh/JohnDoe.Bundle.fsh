@@ -1,8 +1,8 @@
 
 
-Instance: PDR-johndoe-datareceipt
+Instance: PDR-notification-payload
 InstanceOf: Bundle
-Description: "John Doe - Bundle - DataReceipt"
+Description: "John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal."
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

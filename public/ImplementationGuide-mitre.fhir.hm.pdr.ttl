@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "HealthDataReceipt"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-07T09:06:11-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-07T10:16:51-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Manager"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -307,14 +307,56 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PatientDataReceiptHeader" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DehydratedBundle" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR Header" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message Header for a Patient Data Receipt." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Dehydrated bundle." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data receipt payload structure containing a dehydrated Bundle resource, with links to external data sources." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DehydratedDocumentManifest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Document Mainfest." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data receipt payload structure containing a dehydrated DocumentManifest resource, with links to external data sources." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PatientDataReceiptHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Message Header" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message Header for a Patient Data Receipt." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PdrAppointmentReminder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Appointment Reminder" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data receipt for a scheduled appointment.  Analogous to an appointment reminder business card." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -325,10 +367,24 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/PdrFinancialReceipt" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Financial Receipt" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Financial receipt, based off the Claim resource." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VaccineCard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR - Vaccine Card" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data receipt analog of a vaccination card showing proof of viral immunity." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -342,66 +398,80 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Support specification of the target account for a patient data receipt message" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/MessageHeader/PDR-MessageHeader-1>;
-         fhir:Reference.reference [ fhir:value "MessageHeader/PDR-MessageHeader-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-MessageHeader-1" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example patient data receipt message header" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader";
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>
-       ]
-     ], [
-       fhir:index 4;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/PDR-johndoe-datareceipt>;
-         fhir:Reference.reference [ fhir:value "Bundle/PDR-johndoe-datareceipt" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/PDR-appointment-reminder>;
+         fhir:Reference.reference [ fhir:value "Bundle/PDR-appointment-reminder" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-johndoe-datareceipt" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Bundle - DataReceipt" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-appointment-reminder" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Appointment reminder using a SMART HealthLink." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Immunization/PDR-johndoe-fluzone>;
-         fhir:Reference.reference [ fhir:value "Immunization/PDR-johndoe-fluzone" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Immunization/PDR-immunization-record>;
+         fhir:Reference.reference [ fhir:value "Immunization/PDR-immunization-record" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-johndoe-fluzone" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Immunization - Fluzone" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-immunization-record" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Immunization record for influenza vaccination." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/MessageHeader/PDR-notification-messageheader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/PDR-notification-messageheader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-notification-messageheader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example patient data receipt message header" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader";
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/PDR-notification-payload>;
+         fhir:Reference.reference [ fhir:value "Bundle/PDR-notification-payload" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-notification-payload" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Claim" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/PDR-johndoe-zyrtec>;
-         fhir:Reference.reference [ fhir:value "Claim/PDR-johndoe-zyrtec" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/PDR-purchase-receipt>;
+         fhir:Reference.reference [ fhir:value "Claim/PDR-purchase-receipt" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-johndoe-zyrtec" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Receipt - Zyrtec" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-purchase-receipt" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -415,7 +485,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a full patient data receipt message" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -440,8 +510,18 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Implementation.html" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "connectathon.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Connectathon" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "implementation.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Implementation" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Usecases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

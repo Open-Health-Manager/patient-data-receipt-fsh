@@ -13,16 +13,40 @@
     }
   ],
   "profiles": {
+    "Bundle": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle",
+        "title": "PDR - Dehydrated bundle."
+      }
+    ],
+    "DocumentManifest": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest",
+        "title": "PDR - Document Mainfest."
+      }
+    ],
     "MessageHeader": [
       {
         "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader",
-        "title": "PDR Header"
+        "title": "PDR - Message Header"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder",
+        "title": "PDR - Appointment Reminder"
       }
     ],
     "Claim": [
       {
         "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt",
         "title": "PDR - Financial Receipt"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard",
+        "title": "PDR - Vaccine Card"
       }
     ]
   },
@@ -62,6 +86,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

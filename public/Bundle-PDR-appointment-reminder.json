@@ -1,0 +1,27 @@
+{
+  "resourceType": "Bundle",
+  "id": "PDR-appointment-reminder",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-11-05T11:00:00.000-00:00"
+  },
+  "type": "datareceipt",
+  "entry": [
+    {
+      "fullUrl": "http://tinyurl.com/87cd87cvd8cc",
+      "resource": {
+        "resourceType": "DocumentManifest",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"></div><p><b>content</b>: <a href=\"Appointment/8jwd8hcnw8dhcdu8h8vd8h\">Appointment/8jwd8hcnw8dhcdu8h8vd8h: March 2019-11-05</a></p></div>"
+        },
+        "content": [
+          {
+            "reference": "Appointment/8jwd8hcnw8dhcdu8h8vd8h",
+            "display": "March 2019-11-05"
+          }
+        ]
+      }
+    }
+  ]
+}

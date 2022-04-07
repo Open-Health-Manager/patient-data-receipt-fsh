@@ -1,47 +1,64 @@
 ﻿HealthDataReceipt : Validation Results
 =========================================
 
-err = 35, warn = 14, info = 2
+err = 38, warn = 18, info = 2
 IG Publisher Version: 1.1.114 Out of date - current version is ?pub-ver-1?
-Generated Thu Apr 07 09:06:31 CDT 2022. FHIR version 4.0.1 for mitre.fhir.hm.pdr#0.1.0 (canonical = https://github.com/Open-Health-Manager/patient-data-receipt-ig)
+Generated Thu Apr 07 10:17:23 CDT 2022. FHIR version 4.0.1 for mitre.fhir.hm.pdr#0.1.0 (canonical = https://github.com/Open-Health-Manager/patient-data-receipt-ig)
  Build Errors : 5 / 0 / 0
  /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/ImplementationGuide-mitre.fhir.hm.pdr : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/bundle-PDR-johndoe-datareceipt : 3 / 0 / 2
- /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/claim-PDR-johndoe-zyrtec : 6 / 0 / 1
- /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/immunization-PDR-johndoe-fluzone : 2 / 0 / 1
- /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/messageheader-PDR-MessageHeader-1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/bundle-PDR-appointment-reminder : 3 / 0 / 2
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/bundle-PDR-notification-payload : 3 / 0 / 2
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/claim-PDR-purchase-receipt : 6 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/immunization-PDR-immunization-record : 2 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/messageheader-PDR-notification-messageheader : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-AccountExtension : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-DehydratedBundle : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-DehydratedDocumentManifest : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PatientDataReceiptHeader : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PdrAppointmentReminder : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PdrFinancialReceipt : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-VaccineCard : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/input/resources/bundle-pdr-message : 20 / 12 / 7
  /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/input/resources/procedure-pdr-create-colonoscopy : 4 / 1 / 1
 </table>
 == n/a ==
-ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-johndoe-zyrtec.html#/html/body/div/div/div/div/div/div/p/a at Line 188, column 692: The link 'Patient/john-doe' for "Patient/john-doe: John Doe" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-johndoe-zyrtec.html#/html/body/div/div/div/div/div/div/p/a at Line 188, column 806: The link 'Patient/acme-pharmacy' for "Patient/acme-pharmacy: ACME Pharmacy" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-johndoe-zyrtec.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 188, column 1502: The link 'Medication/zyrtec' for "Medication/zyrtec: Zyrtec" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-johndoe-zyrtec.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 188, column 1746: The link 'Coverage/self-pay' for "Coverage/self-pay: Self-pay" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Immunization-PDR-johndoe-fluzone.html#/html/body/div/div/div/div/div/div/p/a at Line 188, column 832: The link 'Patient/john-doe' for "Patient/john-doe: John Doe" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-purchase-receipt.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 694: The link 'Patient/john-doe' for "Patient/john-doe: John Doe" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-purchase-receipt.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 808: The link 'Patient/acme-pharmacy' for "Patient/acme-pharmacy: ACME Pharmacy" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-purchase-receipt.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 194, column 1504: The link 'Medication/zyrtec' for "Medication/zyrtec: Zyrtec" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-PDR-purchase-receipt.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 194, column 1748: The link 'Coverage/self-pay' for "Coverage/self-pay: Self-pay" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Immunization-PDR-immunization-record.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 836: The link 'Patient/john-doe' for "Patient/john-doe: John Doe" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-mitre.fhir.hm.pdr.json ==
-== fsh-generated/resources/Bundle-PDR-johndoe-datareceipt.json ==
-ERROR: Bundle/PDR-johndoe-datareceipt: Bundle.type: The value provided ('datareceipt') is not in the value set 'BundleType' (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/bundle-type#datareceipt in http://hl7.org/fhir/bundle-type)
-ERROR: Bundle/PDR-johndoe-datareceipt: Bundle.entry[0].resource.ofType(DocumentManifest): DocumentManifest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/DocumentManifest)
-ERROR: Bundle/PDR-johndoe-datareceipt: Bundle.entry[0].resource.ofType(DocumentManifest).content[1]: Unable to resolve resource 'Medication/zyrtec'
-== fsh-generated/resources/Claim-PDR-johndoe-zyrtec.json ==
-ERROR: Claim/PDR-johndoe-zyrtec: Claim.type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter in http://terminology.hl7.org/CodeSystem/claim-type for 'http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter'
-ERROR: Claim/PDR-johndoe-zyrtec: Claim.use: The value provided ('receipt') is not in the value set 'Use' (http://hl7.org/fhir/ValueSet/claim-use|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/claim-use#receipt in http://hl7.org/fhir/claim-use)
-ERROR: Claim/PDR-johndoe-zyrtec: Claim.patient: Unable to resolve resource 'Patient/john-doe'
-ERROR: Claim/PDR-johndoe-zyrtec: Claim.provider: Unable to resolve resource 'Patient/acme-pharmacy'
-ERROR: Claim/PDR-johndoe-zyrtec: Claim.supportingInfo[0].value.ofType(Reference): Unable to resolve resource 'Medication/zyrtec'
-ERROR: Claim/PDR-johndoe-zyrtec: Claim.insurance[0].coverage: Unable to resolve resource 'Coverage/self-pay'
-== fsh-generated/resources/Immunization-PDR-johndoe-fluzone.json ==
-ERROR: Immunization/PDR-johndoe-fluzone: Immunization.vaccineCode.coding[1]: Code "49281-0623-78" not found in NDC; The code "49281-0623-78" is not valid in the system http://hl7.org/fhir/sid/ndc; The code provided (http://hl7.org/fhir/sid/ndc#49281-0623-78) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/ndc#49281-0623-78'
-ERROR: Immunization/PDR-johndoe-fluzone: Immunization.patient: Unable to resolve resource 'Patient/john-doe'
-== fsh-generated/resources/MessageHeader-PDR-MessageHeader-1.json ==
+== fsh-generated/resources/Bundle-PDR-appointment-reminder.json ==
+ERROR: Bundle/PDR-appointment-reminder: Bundle.type: The value provided ('datareceipt') is not in the value set 'BundleType' (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/bundle-type#datareceipt in http://hl7.org/fhir/bundle-type)
+ERROR: Bundle/PDR-appointment-reminder: Bundle.entry[0].resource.ofType(DocumentManifest): DocumentManifest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/DocumentManifest)
+ERROR: Bundle/PDR-appointment-reminder: Bundle.entry[0].resource.ofType(DocumentManifest).content[0]: Unable to resolve resource 'Appointment/8jwd8hcnw8dhcdu8h8vd8h'
+== fsh-generated/resources/Bundle-PDR-notification-payload.json ==
+ERROR: Bundle/PDR-notification-payload: Bundle.type: The value provided ('datareceipt') is not in the value set 'BundleType' (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/bundle-type#datareceipt in http://hl7.org/fhir/bundle-type)
+ERROR: Bundle/PDR-notification-payload: Bundle.entry[0].resource.ofType(DocumentManifest): DocumentManifest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/DocumentManifest)
+ERROR: Bundle/PDR-notification-payload: Bundle.entry[0].resource.ofType(DocumentManifest).content[1]: Unable to resolve resource 'Medication/zyrtec'
+== fsh-generated/resources/Claim-PDR-purchase-receipt.json ==
+ERROR: Claim/PDR-purchase-receipt: Claim.type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter in http://terminology.hl7.org/CodeSystem/claim-type for 'http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter'
+ERROR: Claim/PDR-purchase-receipt: Claim.use: The value provided ('receipt') is not in the value set 'Use' (http://hl7.org/fhir/ValueSet/claim-use|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/claim-use#receipt in http://hl7.org/fhir/claim-use)
+ERROR: Claim/PDR-purchase-receipt: Claim.patient: Unable to resolve resource 'Patient/john-doe'
+ERROR: Claim/PDR-purchase-receipt: Claim.provider: Unable to resolve resource 'Patient/acme-pharmacy'
+ERROR: Claim/PDR-purchase-receipt: Claim.supportingInfo[0].value.ofType(Reference): Unable to resolve resource 'Medication/zyrtec'
+ERROR: Claim/PDR-purchase-receipt: Claim.insurance[0].coverage: Unable to resolve resource 'Coverage/self-pay'
+== fsh-generated/resources/Immunization-PDR-immunization-record.json ==
+ERROR: Immunization/PDR-immunization-record: Immunization.vaccineCode.coding[1]: Code "49281-0623-78" not found in NDC; The code "49281-0623-78" is not valid in the system http://hl7.org/fhir/sid/ndc; The code provided (http://hl7.org/fhir/sid/ndc#49281-0623-78) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/ndc#49281-0623-78'
+ERROR: Immunization/PDR-immunization-record: Immunization.patient: Unable to resolve resource 'Patient/john-doe'
+== fsh-generated/resources/MessageHeader-PDR-notification-messageheader.json ==
 == fsh-generated/resources/StructureDefinition-AccountExtension.json ==
+== fsh-generated/resources/StructureDefinition-DehydratedBundle.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DehydratedDocumentManifest.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PatientDataReceiptHeader.json ==
+== fsh-generated/resources/StructureDefinition-PdrAppointmentReminder.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PdrFinancialReceipt.json ==
 WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-VaccineCard.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard'): The Implementation Guide contains no examples for this profile
 == input/resources/bundle-pdr-message.json ==
 ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
 ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here

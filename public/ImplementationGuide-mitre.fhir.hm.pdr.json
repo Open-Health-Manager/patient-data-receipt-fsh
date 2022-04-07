@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "HealthDataReceipt",
   "status": "draft",
-  "date": "2022-04-07T09:06:11-05:00",
+  "date": "2022-04-07T10:16:51-05:00",
   "publisher": "Health Manager",
   "contact": [
     {
@@ -325,10 +325,52 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DehydratedBundle"
+        },
+        "name": "PDR - Dehydrated bundle.",
+        "description": "Data receipt payload structure containing a dehydrated Bundle resource, with links to external data sources.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DehydratedDocumentManifest"
+        },
+        "name": "PDR - Document Mainfest.",
+        "description": "Data receipt payload structure containing a dehydrated DocumentManifest resource, with links to external data sources.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/PatientDataReceiptHeader"
         },
-        "name": "PDR Header",
+        "name": "PDR - Message Header",
         "description": "Message Header for a Patient Data Receipt.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PdrAppointmentReminder"
+        },
+        "name": "PDR - Appointment Reminder",
+        "description": "Data receipt for a scheduled appointment.  Analogous to an appointment reminder business card.",
         "exampleBoolean": false
       },
       {
@@ -342,7 +384,21 @@
           "reference": "StructureDefinition/PdrFinancialReceipt"
         },
         "name": "PDR - Financial Receipt",
-        "description": "Financial receipt, based off the Claim resource.",
+        "description": "Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VaccineCard"
+        },
+        "name": "PDR - Vaccine Card",
+        "description": "Data receipt analog of a vaccination card showing proof of viral immunity.",
         "exampleBoolean": false
       },
       {
@@ -363,13 +419,41 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/PDR-appointment-reminder"
+        },
+        "name": "PDR-appointment-reminder",
+        "description": "John Doe - Appointment reminder using a SMART HealthLink.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/PDR-immunization-record"
+        },
+        "name": "PDR-immunization-record",
+        "description": "John Doe - Immunization record for influenza vaccination.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageHeader"
           }
         ],
         "reference": {
-          "reference": "MessageHeader/PDR-MessageHeader-1"
+          "reference": "MessageHeader/PDR-notification-messageheader"
         },
-        "name": "PDR-MessageHeader-1",
+        "name": "PDR-notification-messageheader",
         "description": "An example patient data receipt message header",
         "exampleCanonical": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"
       },
@@ -381,24 +465,10 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/PDR-johndoe-datareceipt"
+          "reference": "Bundle/PDR-notification-payload"
         },
-        "name": "PDR-johndoe-datareceipt",
-        "description": "John Doe - Bundle - DataReceipt",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Immunization"
-          }
-        ],
-        "reference": {
-          "reference": "Immunization/PDR-johndoe-fluzone"
-        },
-        "name": "PDR-johndoe-fluzone",
-        "description": "John Doe - Immunization - Fluzone",
+        "name": "PDR-notification-payload",
+        "description": "John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal.",
         "exampleBoolean": true
       },
       {
@@ -409,10 +479,10 @@
           }
         ],
         "reference": {
-          "reference": "Claim/PDR-johndoe-zyrtec"
+          "reference": "Claim/PDR-purchase-receipt"
         },
-        "name": "PDR-johndoe-zyrtec",
-        "description": "John Doe - Receipt - Zyrtec",
+        "name": "PDR-purchase-receipt",
+        "description": "John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine.",
         "exampleBoolean": true
       },
       {
@@ -455,8 +525,18 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Implementation.html",
+          "nameUrl": "connectathon.html",
+          "title": "Connectathon",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "implementation.html",
           "title": "Implementation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecases.html",
+          "title": "Usecases",
           "generation": "markdown"
         }
       ]

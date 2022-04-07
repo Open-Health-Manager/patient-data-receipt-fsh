@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="HealthDataReceipt"/>
   <status value="draft"/>
-  <date value="2022-04-07T09:06:11-05:00"/>
+  <date value="2022-04-07T10:16:51-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>
@@ -203,10 +203,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DehydratedBundle"/>
+      </reference>
+      <name value="PDR - Dehydrated bundle."/>
+      <description value="Data receipt payload structure containing a dehydrated Bundle resource, with links to external data sources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DehydratedDocumentManifest"/>
+      </reference>
+      <name value="PDR - Document Mainfest."/>
+      <description value="Data receipt payload structure containing a dehydrated DocumentManifest resource, with links to external data sources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PatientDataReceiptHeader"/>
       </reference>
-      <name value="PDR Header"/>
+      <name value="PDR - Message Header"/>
       <description value="Message Header for a Patient Data Receipt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PdrAppointmentReminder"/>
+      </reference>
+      <name value="PDR - Appointment Reminder"/>
+      <description value="Data receipt for a scheduled appointment.  Analogous to an appointment reminder business card."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -217,7 +250,18 @@
         <reference value="StructureDefinition/PdrFinancialReceipt"/>
       </reference>
       <name value="PDR - Financial Receipt"/>
-      <description value="Financial receipt, based off the Claim resource."/>
+      <description value="Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VaccineCard"/>
+      </reference>
+      <name value="PDR - Vaccine Card"/>
+      <description value="Data receipt analog of a vaccination card showing proof of viral immunity."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -233,12 +277,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/PDR-appointment-reminder"/>
+      </reference>
+      <name value="PDR-appointment-reminder"/>
+      <description value="John Doe - Appointment reminder using a SMART HealthLink."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/PDR-immunization-record"/>
+      </reference>
+      <name value="PDR-immunization-record"/>
+      <description value="John Doe - Immunization record for influenza vaccination."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageHeader"/>
       </extension>
       <reference>
-        <reference value="MessageHeader/PDR-MessageHeader-1"/>
+        <reference value="MessageHeader/PDR-notification-messageheader"/>
       </reference>
-      <name value="PDR-MessageHeader-1"/>
+      <name value="PDR-notification-messageheader"/>
       <description value="An example patient data receipt message header"/>
       <exampleCanonical value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/>
     </resource>
@@ -247,21 +313,10 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/PDR-johndoe-datareceipt"/>
+        <reference value="Bundle/PDR-notification-payload"/>
       </reference>
-      <name value="PDR-johndoe-datareceipt"/>
-      <description value="John Doe - Bundle - DataReceipt"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/PDR-johndoe-fluzone"/>
-      </reference>
-      <name value="PDR-johndoe-fluzone"/>
-      <description value="John Doe - Immunization - Fluzone"/>
+      <name value="PDR-notification-payload"/>
+      <description value="John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -269,10 +324,10 @@
         <valueString value="Claim"/>
       </extension>
       <reference>
-        <reference value="Claim/PDR-johndoe-zyrtec"/>
+        <reference value="Claim/PDR-purchase-receipt"/>
       </reference>
-      <name value="PDR-johndoe-zyrtec"/>
-      <description value="John Doe - Receipt - Zyrtec"/>
+      <name value="PDR-purchase-receipt"/>
+      <description value="John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -307,8 +362,18 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="Implementation.html"/>
+        <nameUrl value="connectathon.html"/>
+        <title value="Connectathon"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="implementation.html"/>
         <title value="Implementation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="Usecases"/>
         <generation value="markdown"/>
       </page>
     </page>

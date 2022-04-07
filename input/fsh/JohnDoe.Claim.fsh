@@ -1,8 +1,8 @@
 
 
-Instance: PDR-johndoe-zyrtec
+Instance: PDR-purchase-receipt
 InstanceOf: Claim
-Description: "John Doe - Receipt - Zyrtec"
+Description: "John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine."
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

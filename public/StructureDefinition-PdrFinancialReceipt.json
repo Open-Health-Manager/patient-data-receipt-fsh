@@ -20,7 +20,7 @@
   "name": "PdrFinancialReceipt",
   "title": "PDR - Financial Receipt",
   "status": "active",
-  "date": "2022-04-07T09:06:11-05:00",
+  "date": "2022-04-07T10:16:51-05:00",
   "publisher": "Health Manager",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "Financial receipt, based off the Claim resource.",
+  "description": "Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

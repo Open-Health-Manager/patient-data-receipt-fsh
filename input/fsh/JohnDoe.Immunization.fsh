@@ -1,6 +1,6 @@
-Instance: PDR-johndoe-fluzone
+Instance: PDR-immunization-record
 InstanceOf: Immunization
-Description: "John Doe - Immunization - Fluzone"
+Description: "John Doe - Immunization record for influenza vaccination."
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"
