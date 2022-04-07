@@ -3,6 +3,6 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 Profile: DehydratedDocumentManifest
 Parent: DocumentManifest
-Title: "PDR - Document Mainfest."
+Title: "PDR - Document Manifest"
 Description: "Data receipt payload structure containing a dehydrated DocumentManifest resource, with links to external data sources."
 
