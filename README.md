@@ -22,14 +22,19 @@ open output/index.html
 
 #### Use Cases  
 
-- Over the Counter Medications (Claim)
-- Restaurants & General Commerce (Immunization)
+- Push Notifications (Patient, DocumentManifest)
+- Over the Counter Medications (FinancialReceipt)
+- Immunication Records (VaccinationCard)
+- Restaurants & General Commerce (FinancialReceipt)
 - Patient Intake (Patient)
-- Specialist Consultation (Bundle)
+- Specialist Consultation (DehydratedBundle)
 
 
 #### Transport Mechanism  
 
+- PUT/POST HTTP Messages
+- Dynamic URLs (i.e. TinyUrl)
 - QR Codes  
-- RFID 
 - Bluetooth AirDrop  
+- NFC & RFID 
+
