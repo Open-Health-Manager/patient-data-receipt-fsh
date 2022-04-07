@@ -13,11 +13,11 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="PdrFinancialReceipt"/>
   <title value="PDR - Financial Receipt"/>
   <status value="active"/>
-  <date value="2022-04-07T10:41:20-05:00"/>
+  <date value="2022-04-07T11:11:08-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>

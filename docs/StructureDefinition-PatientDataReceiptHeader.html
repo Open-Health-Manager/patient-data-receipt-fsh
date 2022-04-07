@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FHIR.HM.PDR\Patient Data Receipt Header - FHIR v4.0.1</title>
+    <title>MITRE.FHIR.HM.PDR\PDR - Message Header - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.1"}
-    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -53,7 +53,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -83,13 +83,19 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="usecases.html">Use Cases</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation.html">Implementation</a>
+        <a href="implementation.html">Implementation</a>
+      </li>
+      <li>
+        <a href="connectathon.html">Connectathons</a>
       </li>
     </ul>
   </li>
@@ -108,7 +114,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient Data Receipt Header</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PDR - Message Header</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -121,7 +127,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HealthDataReceipt - Local Development build (v0.1.0). See the <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HealthDataReceipt - Local Development build (v0.2.0). See the <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -196,7 +202,7 @@
   <a name="root"> </a>
   <h2 id="root">Resource Profile:
 
-    Patient Data Receipt Header
+    PDR - Message Header
 
 
 
@@ -210,7 +216,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader|0.1.0"/></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader|0.2.0"/></span>
       </td>
     </tr>
 
@@ -226,7 +232,7 @@
         
           Active
           
-            as of 2022-03-17
+            as of 2022-04-07
           
         
       </td>
@@ -251,6 +257,12 @@
 <!-- insert intro if present -->
 
 
+
+
+<p><b>Usage:</b></p>
+<ul>
+ <li>Examples for this Resource Profile: <a href="MessageHeader-PDR-notification-messageheader.html">MessageHeader/PDR-notification-messageheader</a></li>
+</ul>
 
 
   <!-- no uri -->
@@ -411,7 +423,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
-           // <span style="color: navy; opacity: 0.8">Patient Data Receipt Header</span>
+           // <span style="color: navy; opacity: 0.8">PDR - Message Header</span>
  {
    "resourceType" : "MessageHeader",
     "<a href="StructureDefinition-PatientDataReceiptHeader.html#MessageHeader.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -608,7 +620,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
-           // <span style="color: navy; opacity: 0.8">Patient Data Receipt Header</span>
+           // <span style="color: navy; opacity: 0.8">PDR - Message Header</span>
  {
    "resourceType" : "MessageHeader",
     "<a href="StructureDefinition-PatientDataReceiptHeader.html#MessageHeader.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -810,11 +822,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-<<<<<<< HEAD:docs/StructureDefinition-PatientDataReceiptHeader.html
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 10:41-0500">2022-04-07</span>
-=======
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 17, 2022 13:26-0400">2022-03-17</span>
->>>>>>> main:output/StructureDefinition-PatientDataReceiptHeader.html
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 11:11-0500">2022-04-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

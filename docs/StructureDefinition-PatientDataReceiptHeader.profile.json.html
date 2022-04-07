@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FHIR.HM.PDR\Patient Data Receipt Header - JSON Representation - FHIR v4.0.1</title>
+    <title>MITRE.FHIR.HM.PDR\PDR - Message Header - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.1"}
-    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -87,13 +87,19 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="usecases.html">Use Cases</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation.html">Implementation</a>
+        <a href="implementation.html">Implementation</a>
+      </li>
+      <li>
+        <a href="connectathon.html">Connectathons</a>
       </li>
     </ul>
   </li>
@@ -112,7 +118,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient Data Receipt Header</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PDR - Message Header</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -125,7 +131,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HealthDataReceipt - Local Development build (v0.1.0). See the <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HealthDataReceipt - Local Development build (v0.2.0). See the <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -206,7 +212,7 @@
         
           Active
           
-            as of 2022-03-17
+            as of 2022-04-07
           
         
       </td>
@@ -243,15 +249,11 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.0",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "PatientDataReceiptHeader",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "Patient Data Receipt Header",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "PDR - Message Header",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-<<<<<<< HEAD:docs/StructureDefinition-PatientDataReceiptHeader.profile.json.html
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2022-04-07T10:41:20-05:00",
-=======
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2022-03-17T13:26:51-04:00",
->>>>>>> main:output/StructureDefinition-PatientDataReceiptHeader.profile.json.html
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2022-04-07T11:11:08-05:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Health Manager",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -2398,11 +2400,7 @@
 
       <div class="inner-wrapper">
         <p>
-<<<<<<< HEAD:docs/StructureDefinition-PatientDataReceiptHeader.profile.json.html
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 10:41-0500">2022-04-07</span>
-=======
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 17, 2022 13:26-0400">2022-03-17</span>
->>>>>>> main:output/StructureDefinition-PatientDataReceiptHeader.profile.json.html
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mitre.sharepoint.com/sites/healthmanager">Health Manager</a>.  Package mitre.fhir.hm.pdr#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 11:11-0500">2022-04-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

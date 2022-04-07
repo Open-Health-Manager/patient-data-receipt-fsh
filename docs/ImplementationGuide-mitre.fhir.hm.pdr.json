@@ -6,14 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HealthDataReceipt</h2><p>The official URL for this implementation guide is: </p><pre>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr</pre></div>"
   },
   "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HealthDataReceipt",
   "status": "draft",
-<<<<<<< HEAD:docs/ImplementationGuide-mitre.fhir.hm.pdr.json
-  "date": "2022-04-07T10:41:20-05:00",
-=======
-  "date": "2022-03-17T13:26:51-04:00",
->>>>>>> main:output/ImplementationGuide-mitre.fhir.hm.pdr.json
+  "date": "2022-04-07T11:11:08-05:00",
   "publisher": "Health Manager",
   "contact": [
     {
@@ -305,6 +301,19 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -316,7 +325,6 @@
           }
         ],
         "reference": {
-<<<<<<< HEAD:docs/ImplementationGuide-mitre.fhir.hm.pdr.json
           "reference": "StructureDefinition/DehydratedBundle"
         },
         "name": "PDR - Dehydrated Bundle",
@@ -345,12 +353,52 @@
           }
         ],
         "reference": {
-=======
->>>>>>> main:output/ImplementationGuide-mitre.fhir.hm.pdr.json
           "reference": "StructureDefinition/PatientDataReceiptHeader"
         },
-        "name": "Patient Data Receipt Header",
+        "name": "PDR - Message Header",
         "description": "Message Header for a Patient Data Receipt.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PdrAppointmentReminder"
+        },
+        "name": "PDR - Appointment Reminder",
+        "description": "Data receipt for a scheduled appointment.  Analogous to an appointment reminder business card.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PdrFinancialReceipt"
+        },
+        "name": "PDR - Financial Receipt",
+        "description": "Financial receipt for over-the-counter (OTC) purchases.  Based off the Claim resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VaccineCard"
+        },
+        "name": "PDR - Vaccine Card",
+        "description": "Data receipt analog of a vaccination card showing proof of viral immunity.",
         "exampleBoolean": false
       },
       {
@@ -371,15 +419,71 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/PDR-appointment-reminder"
+        },
+        "name": "PDR-appointment-reminder",
+        "description": "John Doe - Appointment reminder using a SMART HealthLink.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/PDR-immunization-record"
+        },
+        "name": "PDR-immunization-record",
+        "description": "John Doe - Immunization record for influenza vaccination.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageHeader"
           }
         ],
         "reference": {
-          "reference": "MessageHeader/PDR-MessageHeader-1"
+          "reference": "MessageHeader/PDR-notification-messageheader"
         },
-        "name": "PDR-MessageHeader-1",
+        "name": "PDR-notification-messageheader",
         "description": "An example patient data receipt message header",
         "exampleCanonical": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/PDR-notification-payload"
+        },
+        "name": "PDR-notification-payload",
+        "description": "John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Claim"
+          }
+        ],
+        "reference": {
+          "reference": "Claim/PDR-purchase-receipt"
+        },
+        "name": "PDR-purchase-receipt",
+        "description": "John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine.",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -421,8 +525,18 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Implementation.html",
+          "nameUrl": "connectathon.html",
+          "title": "Connectathon",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "implementation.html",
           "title": "Implementation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecases.html",
+          "title": "Usecases",
           "generation": "markdown"
         }
       ]

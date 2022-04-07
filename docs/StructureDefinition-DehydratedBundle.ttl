@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "DehydratedBundle"];
   fhir:StructureDefinition.title [ fhir:value "PDR - Dehydrated Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-07T10:41:20-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-07T11:11:08-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Health Manager"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
