@@ -20,10 +20,8 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Use Cases: usecases.html
   Specification:
-    Implementation: implementation.html
-    Connectathons: connectathon.html
+    Implementation: Implementation.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
