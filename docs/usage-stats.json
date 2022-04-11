@@ -1,0 +1,120 @@
+{
+  "package": "mitre.fhir.hm.pdr",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension",
+      "title": "Account Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle",
+        "title": "PDR - Dehydrated Bundle"
+      }
+    ],
+    "DocumentManifest": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest",
+        "title": "PDR - Document Manifest"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader",
+        "title": "PDR - Message Header"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder",
+        "title": "PDR - Appointment Reminder"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt",
+        "title": "PDR - Financial Receipt"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard",
+        "title": "PDR - Vaccine Card"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Bundle.entry.resource.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource"
+    ],
+    "http://synthetichealth.github.io/synthea/disability-adjusted-life-years": [
+      "Bundle.entry.resource"
+    ],
+    "http://synthetichealth.github.io/synthea/quality-adjusted-life-years": [
+      "Bundle.entry.resource"
+    ],
+    "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension": [
+      "Bundle.entry.resource",
+      "MessageHeader",
+      "Procedure.meta"
+    ]
+  }
+}

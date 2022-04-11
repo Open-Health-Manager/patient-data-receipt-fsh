@@ -1,0 +1,99 @@
+{
+  "resourceType": "Claim",
+  "id": "PDR-purchase-receipt",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-10-04T19:42:52.061-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PDR-purchase-receipt\" Version \"1\" Updated \"2018-10-04 07:42:52-0400\" </p></div><p><b>status</b>: active</p><p><b>type</b>: Over The Counter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claim-type.html\">Claim Type Codes</a>#over-the-counter)</span></p><p><b>use</b>: receipt</p><p><b>patient</b>: <a href=\"Patient/john-doe\">Patient/john-doe: John Doe</a></p><p><b>created</b>: 2018-10-04</p><p><b>provider</b>: <a href=\"Patient/acme-pharmacy\">Patient/acme-pharmacy: ACME Pharmacy</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><h3>SupportingInfos</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Medical Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-benefitcategory.html\">Benefit Category Codes</a>#1)</span></td><td><a href=\"Medication/zyrtec\">Medication/zyrtec: Zyrtec</a></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>false</td><td><a href=\"Coverage/self-pay\">Coverage/self-pay: Self-pay</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Expense <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-USCLS.html\">USCLS Codes</a>#99555)</span></p><p><b>serviced</b>: 2018-10-04</p><p><b>quantity</b>: 1</p></blockquote></div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "over-the-counter",
+        "display": "Over The Counter"
+      }
+    ]
+  },
+  "use": "receipt",
+  "patient": {
+    "reference": "Patient/john-doe",
+    "display": "John Doe"
+  },
+  "created": "2018-10-04",
+  "provider": {
+    "reference": "Patient/acme-pharmacy",
+    "display": "ACME Pharmacy"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal",
+        "display": "Normal"
+      }
+    ]
+  },
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+            "code": "1",
+            "display": "Medical Care"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Medication/zyrtec",
+        "display": "Zyrtec"
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": false,
+      "coverage": {
+        "reference": "Coverage/self-pay",
+        "display": "Self-pay"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-USCLS",
+            "code": "99555",
+            "display": "Expense"
+          }
+        ]
+      },
+      "servicedDate": "2018-10-04",
+      "quantity": {
+        "value": 1
+      },
+      "unitPrice": {
+        "value": 12.95,
+        "currency": "USD"
+      },
+      "net": {
+        "value": 13.65,
+        "currency": "USD"
+      }
+    }
+  ],
+  "total": {
+    "value": 13.65,
+    "currency": "USD"
+  }
+}
