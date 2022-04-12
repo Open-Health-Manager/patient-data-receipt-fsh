@@ -38,4 +38,4 @@ jobs:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           EXTERNAL_REPOSITORY: Open-Health-Manager/patient-data-receipt-ig
           PUBLISH_BRANCH: main
-          PUBLISH_DIR: ./output
+          PUBLISH_DIR: ./docs
