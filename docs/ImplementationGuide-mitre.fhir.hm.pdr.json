@@ -9,7 +9,7 @@
   "version": "0.2.0",
   "name": "HealthDataReceipt",
   "status": "draft",
-  "date": "2022-04-07T11:11:08-05:00",
+  "date": "2022-04-16T12:52:05-05:00",
   "publisher": "Health Manager",
   "contact": [
     {
@@ -411,7 +411,7 @@
         "reference": {
           "reference": "StructureDefinition/AccountExtension"
         },
-        "name": "Account Extension",
+        "name": "Extension-Account",
         "description": "Support specification of the target account for a patient data receipt message",
         "exampleBoolean": false
       },
@@ -419,43 +419,253 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
+            "valueString": "Appointment"
           }
         ],
         "reference": {
-          "reference": "Bundle/PDR-appointment-reminder"
+          "reference": "Appointment/Appointment-1"
         },
-        "name": "PDR-appointment-reminder",
-        "description": "John Doe - Appointment reminder using a SMART HealthLink.",
+        "name": "Appointment-1",
+        "description": "Appointment - Jane Doe at Fast Scan Radiology",
         "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Immunization"
+            "valueString": "Condition"
           }
         ],
         "reference": {
-          "reference": "Immunization/PDR-immunization-record"
+          "reference": "Condition/Condition-Hematoma"
         },
-        "name": "PDR-immunization-record",
-        "description": "John Doe - Immunization record for influenza vaccination.",
+        "name": "Condition-Hematoma",
+        "description": "Jane Smith - Hematoma",
         "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageHeader"
+            "valueString": "Device"
           }
         ],
         "reference": {
-          "reference": "MessageHeader/PDR-notification-messageheader"
+          "reference": "Device/Device-HealthApp"
         },
-        "name": "PDR-notification-messageheader",
-        "description": "An example patient data receipt message header",
-        "exampleCanonical": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"
+        "name": "Device-HealthApp",
+        "description": "Device - Health App",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Device-HealthManager"
+        },
+        "name": "Device-HealthManager",
+        "description": "Device - Health Manager",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Device-HospitalEhr"
+        },
+        "name": "Device-HospitalEhr",
+        "description": "Device - Hospital EHR",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Device-Smartphone"
+        },
+        "name": "Device-Smartphone",
+        "description": "Device - Smart Phone (John Smith)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Device-Wearable"
+        },
+        "name": "Device-Wearable",
+        "description": "Device - Wearable Smart Clothing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/DiagnosticReport-CtScan"
+        },
+        "name": "DiagnosticReport-CtScan",
+        "description": "Jane Smith - Diagnostic Report for CT Scan",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/Encounter-StJames-1"
+        },
+        "name": "Encounter-StJames-1",
+        "description": "Encounter - John Smith at St. James Infirmary with primary care provider.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/Encounter-Telehealth-1"
+        },
+        "name": "Encounter-Telehealth-1",
+        "description": "Encounter - Jane Smith with telehealth app and out-of-network neurologist.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/ExampleScenario-Appointment"
+        },
+        "name": "ExampleScenario-Appointment",
+        "description": "Example Scenario:  Appointment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/ExampleScenario-Notification"
+        },
+        "name": "ExampleScenario-Notification",
+        "description": "Example Scenario:  Push Notification",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/ExampleScenario-PurchaseReceipt"
+        },
+        "name": "ExampleScenario-PurchaseReceipt",
+        "description": "Example Scenario:  Purchase Receipt",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/ExampleScenario-VaccineCard"
+        },
+        "name": "ExampleScenario-VaccineCard",
+        "description": "Example Scenario:  Vaccine Card",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Organization-AcmePharmacy"
+        },
+        "name": "Organization-AcmePharmacy",
+        "description": "Organization - ACME Pharmacy",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Organization-FastScanRadiology"
+        },
+        "name": "Organization-FastScanRadiology",
+        "description": "Organization - Fast Scan Radiology",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Organization-StJames"
+        },
+        "name": "Organization-StJames",
+        "description": "Organization - St. Jame's Infirmary",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/Procedure-CTScan"
+        },
+        "name": "Procedure-CTScan",
+        "description": "Jane Smith - CT Head and Abdomen",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -465,10 +675,10 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/PDR-notification-payload"
+          "reference": "Bundle/Receipt-Notification-Payload"
         },
-        "name": "PDR-notification-payload",
-        "description": "John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal.",
+        "name": "Receipt-Notification-Payload",
+        "description": "John Smith - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal.",
         "exampleBoolean": true
       },
       {
@@ -479,10 +689,66 @@
           }
         ],
         "reference": {
-          "reference": "Claim/PDR-purchase-receipt"
+          "reference": "Claim/Receipt-Purchase"
         },
-        "name": "PDR-purchase-receipt",
-        "description": "John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine.",
+        "name": "Receipt-Purchase",
+        "description": "John Smith - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/Receipt-immunization-record"
+        },
+        "name": "Receipt-immunization-record",
+        "description": "John Smith - Immunization record for influenza vaccination.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/Receipt-notification-header"
+        },
+        "name": "Receipt-notification-header",
+        "description": "An example patient data receipt message header",
+        "exampleCanonical": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/janesmith"
+        },
+        "name": "Patient - Jane Smith",
+        "description": "Patient - Jane Smith",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/johnsmith"
+        },
+        "name": "Patient - John Smith",
+        "description": "Patient - John Smith",
         "exampleBoolean": true
       },
       {

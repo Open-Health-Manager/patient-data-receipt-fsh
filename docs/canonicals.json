@@ -1,5 +1,29 @@
 [
   {
+    "id": "ExampleScenario-Appointment",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Appointment",
+    "version": "0.2.0"
+  },
+  {
+    "id": "ExampleScenario-Notification",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Notification",
+    "version": "0.2.0"
+  },
+  {
+    "id": "ExampleScenario-PurchaseReceipt",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-PurchaseReceipt",
+    "version": "0.2.0"
+  },
+  {
+    "id": "ExampleScenario-VaccineCard",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-VaccineCard",
+    "version": "0.2.0"
+  },
+  {
     "id": "mitre.fhir.hm.pdr",
     "type": "ImplementationGuide",
     "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr",

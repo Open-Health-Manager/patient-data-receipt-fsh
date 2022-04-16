@@ -7,7 +7,7 @@
     <resource>
       <MessageHeader>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"></div><p><b>Account Extension</b>: a394Kutch271</p><p><b>event</b>: <code>urn:mitre:healthmanager:pdr</code></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href="http://example.org">http://example.org</a></td></tr></table></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"></div><p><b>Extension-Account</b>: a394Kutch271</p><p><b>event</b>: <code>urn:mitre:healthmanager:pdr</code></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href="http://example.org">http://example.org</a></td></tr></table></div>
         </text>
         <extension url="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension">
           <valueString value="a394Kutch271"/>

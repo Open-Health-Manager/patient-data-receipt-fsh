@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "HealthDataReceipt"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-07T11:11:08-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-16T12:52:05-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Manager"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -394,7 +394,7 @@
          fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/AccountExtension" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Account Extension" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Extension-Account" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Support specification of the target account for a patient data receipt message" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -402,76 +402,342 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
+         fhir:Extension.valueString [ fhir:value "Appointment" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/PDR-appointment-reminder>;
-         fhir:Reference.reference [ fhir:value "Bundle/PDR-appointment-reminder" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Appointment/Appointment-1>;
+         fhir:Reference.reference [ fhir:value "Appointment/Appointment-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-appointment-reminder" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Appointment reminder using a SMART HealthLink." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Appointment-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Appointment - Jane Doe at Fast Scan Radiology" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
+         fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Immunization/PDR-immunization-record>;
-         fhir:Reference.reference [ fhir:value "Immunization/PDR-immunization-record" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Condition/Condition-Hematoma>;
+         fhir:Reference.reference [ fhir:value "Condition/Condition-Hematoma" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-immunization-record" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Immunization record for influenza vaccination." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition-Hematoma" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jane Smith - Hematoma" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+         fhir:Extension.valueString [ fhir:value "Device" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/MessageHeader/PDR-notification-messageheader>;
-         fhir:Reference.reference [ fhir:value "MessageHeader/PDR-notification-messageheader" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Device/Device-HealthApp>;
+         fhir:Reference.reference [ fhir:value "Device/Device-HealthApp" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-notification-messageheader" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example patient data receipt message header" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader";
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device-HealthApp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Device - Health App" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
+         fhir:Extension.valueString [ fhir:value "Device" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/PDR-notification-payload>;
-         fhir:Reference.reference [ fhir:value "Bundle/PDR-notification-payload" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Device/Device-HealthManager>;
+         fhir:Reference.reference [ fhir:value "Device/Device-HealthManager" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-notification-payload" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device-HealthManager" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Device - Health Manager" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Claim" ]
+         fhir:Extension.valueString [ fhir:value "Device" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/PDR-purchase-receipt>;
-         fhir:Reference.reference [ fhir:value "Claim/PDR-purchase-receipt" ]
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Device/Device-HospitalEhr>;
+         fhir:Reference.reference [ fhir:value "Device/Device-HospitalEhr" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDR-purchase-receipt" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device-HospitalEhr" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Device - Hospital EHR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Device/Device-Smartphone>;
+         fhir:Reference.reference [ fhir:value "Device/Device-Smartphone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device-Smartphone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Device - Smart Phone (John Smith)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Device/Device-Wearable>;
+         fhir:Reference.reference [ fhir:value "Device/Device-Wearable" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device-Wearable" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Device - Wearable Smart Clothing" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/DiagnosticReport/DiagnosticReport-CtScan>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/DiagnosticReport-CtScan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport-CtScan" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jane Smith - Diagnostic Report for CT Scan" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Encounter/Encounter-StJames-1>;
+         fhir:Reference.reference [ fhir:value "Encounter/Encounter-StJames-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter-StJames-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter - John Smith at St. James Infirmary with primary care provider." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Encounter/Encounter-Telehealth-1>;
+         fhir:Reference.reference [ fhir:value "Encounter/Encounter-Telehealth-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter-Telehealth-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter - Jane Smith with telehealth app and out-of-network neurologist." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Appointment>;
+         fhir:Reference.reference [ fhir:value "ExampleScenario/ExampleScenario-Appointment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-Appointment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Appointment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Notification>;
+         fhir:Reference.reference [ fhir:value "ExampleScenario/ExampleScenario-Notification" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-Notification" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Push Notification" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-PurchaseReceipt>;
+         fhir:Reference.reference [ fhir:value "ExampleScenario/ExampleScenario-PurchaseReceipt" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-PurchaseReceipt" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Purchase Receipt" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-VaccineCard>;
+         fhir:Reference.reference [ fhir:value "ExampleScenario/ExampleScenario-VaccineCard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-VaccineCard" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Vaccine Card" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Organization/Organization-AcmePharmacy>;
+         fhir:Reference.reference [ fhir:value "Organization/Organization-AcmePharmacy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization-AcmePharmacy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization - ACME Pharmacy" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Organization/Organization-FastScanRadiology>;
+         fhir:Reference.reference [ fhir:value "Organization/Organization-FastScanRadiology" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization-FastScanRadiology" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization - Fast Scan Radiology" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Organization/Organization-StJames>;
+         fhir:Reference.reference [ fhir:value "Organization/Organization-StJames" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization-StJames" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization - St. Jame's Infirmary" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Procedure/Procedure-CTScan>;
+         fhir:Reference.reference [ fhir:value "Procedure/Procedure-CTScan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure-CTScan" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jane Smith - CT Head and Abdomen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/Receipt-Notification-Payload>;
+         fhir:Reference.reference [ fhir:value "Bundle/Receipt-Notification-Payload" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Receipt-Notification-Payload" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Smith - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Claim" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/Receipt-Purchase>;
+         fhir:Reference.reference [ fhir:value "Claim/Receipt-Purchase" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Receipt-Purchase" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Smith - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Immunization/Receipt-immunization-record>;
+         fhir:Reference.reference [ fhir:value "Immunization/Receipt-immunization-record" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Receipt-immunization-record" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Smith - Immunization record for influenza vaccination." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/MessageHeader/Receipt-notification-header>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/Receipt-notification-header" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Receipt-notification-header" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example patient data receipt message header" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader";
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader>
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Patient/janesmith>;
+         fhir:Reference.reference [ fhir:value "Patient/janesmith" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient - Jane Smith" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient - Jane Smith" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Patient/johnsmith>;
+         fhir:Reference.reference [ fhir:value "Patient/johnsmith" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient - John Smith" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient - John Smith" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -485,7 +751,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a full patient data receipt message" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -9,7 +9,7 @@
   <version value="0.2.0"/>
   <name value="HealthDataReceipt"/>
   <status value="draft"/>
-  <date value="2022-04-07T11:11:08-05:00"/>
+  <date value="2022-04-16T12:52:05-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>
@@ -271,52 +271,217 @@
       <reference>
         <reference value="StructureDefinition/AccountExtension"/>
       </reference>
-      <name value="Account Extension"/>
+      <name value="Extension-Account"/>
       <description value="Support specification of the target account for a patient data receipt message"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="Appointment"/>
       </extension>
       <reference>
-        <reference value="Bundle/PDR-appointment-reminder"/>
+        <reference value="Appointment/Appointment-1"/>
       </reference>
-      <name value="PDR-appointment-reminder"/>
-      <description value="John Doe - Appointment reminder using a SMART HealthLink."/>
+      <name value="Appointment-1"/>
+      <description value="Appointment - Jane Doe at Fast Scan Radiology"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
+        <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Immunization/PDR-immunization-record"/>
+        <reference value="Condition/Condition-Hematoma"/>
       </reference>
-      <name value="PDR-immunization-record"/>
-      <description value="John Doe - Immunization record for influenza vaccination."/>
+      <name value="Condition-Hematoma"/>
+      <description value="Jane Smith - Hematoma"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageHeader"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="MessageHeader/PDR-notification-messageheader"/>
+        <reference value="Device/Device-HealthApp"/>
       </reference>
-      <name value="PDR-notification-messageheader"/>
-      <description value="An example patient data receipt message header"/>
-      <exampleCanonical value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/>
+      <name value="Device-HealthApp"/>
+      <description value="Device - Health App"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Device-HealthManager"/>
+      </reference>
+      <name value="Device-HealthManager"/>
+      <description value="Device - Health Manager"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Device-HospitalEhr"/>
+      </reference>
+      <name value="Device-HospitalEhr"/>
+      <description value="Device - Hospital EHR"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Device-Smartphone"/>
+      </reference>
+      <name value="Device-Smartphone"/>
+      <description value="Device - Smart Phone (John Smith)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Device-Wearable"/>
+      </reference>
+      <name value="Device-Wearable"/>
+      <description value="Device - Wearable Smart Clothing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/DiagnosticReport-CtScan"/>
+      </reference>
+      <name value="DiagnosticReport-CtScan"/>
+      <description value="Jane Smith - Diagnostic Report for CT Scan"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter-StJames-1"/>
+      </reference>
+      <name value="Encounter-StJames-1"/>
+      <description value="Encounter - John Smith at St. James Infirmary with primary care provider."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter-Telehealth-1"/>
+      </reference>
+      <name value="Encounter-Telehealth-1"/>
+      <description value="Encounter - Jane Smith with telehealth app and out-of-network neurologist."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/ExampleScenario-Appointment"/>
+      </reference>
+      <name value="ExampleScenario-Appointment"/>
+      <description value="Example Scenario:  Appointment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/ExampleScenario-Notification"/>
+      </reference>
+      <name value="ExampleScenario-Notification"/>
+      <description value="Example Scenario:  Push Notification"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/ExampleScenario-PurchaseReceipt"/>
+      </reference>
+      <name value="ExampleScenario-PurchaseReceipt"/>
+      <description value="Example Scenario:  Purchase Receipt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/ExampleScenario-VaccineCard"/>
+      </reference>
+      <name value="ExampleScenario-VaccineCard"/>
+      <description value="Example Scenario:  Vaccine Card"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organization-AcmePharmacy"/>
+      </reference>
+      <name value="Organization-AcmePharmacy"/>
+      <description value="Organization - ACME Pharmacy"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organization-FastScanRadiology"/>
+      </reference>
+      <name value="Organization-FastScanRadiology"/>
+      <description value="Organization - Fast Scan Radiology"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organization-StJames"/>
+      </reference>
+      <name value="Organization-StJames"/>
+      <description value="Organization - St. Jame's Infirmary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/Procedure-CTScan"/>
+      </reference>
+      <name value="Procedure-CTScan"/>
+      <description value="Jane Smith - CT Head and Abdomen"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/PDR-notification-payload"/>
+        <reference value="Bundle/Receipt-Notification-Payload"/>
       </reference>
-      <name value="PDR-notification-payload"/>
-      <description value="John Doe - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal."/>
+      <name value="Receipt-Notification-Payload"/>
+      <description value="John Smith - Data payload of a push notification receipt notifying a patient of new claim registered with their patient portal."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -324,10 +489,54 @@
         <valueString value="Claim"/>
       </extension>
       <reference>
-        <reference value="Claim/PDR-purchase-receipt"/>
+        <reference value="Claim/Receipt-Purchase"/>
       </reference>
-      <name value="PDR-purchase-receipt"/>
-      <description value="John Doe - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine."/>
+      <name value="Receipt-Purchase"/>
+      <description value="John Smith - Over the counter (OTC) purchase receipt for bottle of Zyrtec antihistamine."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/Receipt-immunization-record"/>
+      </reference>
+      <name value="Receipt-immunization-record"/>
+      <description value="John Smith - Immunization record for influenza vaccination."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/Receipt-notification-header"/>
+      </reference>
+      <name value="Receipt-notification-header"/>
+      <description value="An example patient data receipt message header"/>
+      <exampleCanonical value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/janesmith"/>
+      </reference>
+      <name value="Patient - Jane Smith"/>
+      <description value="Patient - Jane Smith"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/johnsmith"/>
+      </reference>
+      <name value="Patient - John Smith"/>
+      <description value="Patient - John Smith"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
