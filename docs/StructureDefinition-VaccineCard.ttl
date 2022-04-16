@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "VaccineCard"];
   fhir:StructureDefinition.title [ fhir:value "PDR - Vaccine Card"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-16T12:52:05-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-16T13:01:50-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Health Manager"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

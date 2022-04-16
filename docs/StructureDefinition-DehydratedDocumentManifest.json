@@ -16,11 +16,11 @@
     }
   ],
   "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "DehydratedDocumentManifest",
   "title": "PDR - Document Manifest",
   "status": "active",
-  "date": "2022-04-16T12:52:05-05:00",
+  "date": "2022-04-16T13:01:50-05:00",
   "publisher": "Health Manager",
   "contact": [
     {

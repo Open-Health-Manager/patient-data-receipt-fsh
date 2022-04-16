@@ -1,6 +1,6 @@
 {
   "package": "mitre.fhir.hm.pdr",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

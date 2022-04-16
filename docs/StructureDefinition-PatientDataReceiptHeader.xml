@@ -17,11 +17,11 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="PatientDataReceiptHeader"/>
   <title value="PDR - Message Header"/>
   <status value="active"/>
-  <date value="2022-04-16T12:52:05-05:00"/>
+  <date value="2022-04-16T13:01:50-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>

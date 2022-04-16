@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HealthDataReceipt</h2><p>The official URL for this implementation guide is: </p><pre>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr</pre></div>
   </text>
   <url value="https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="HealthDataReceipt"/>
   <status value="draft"/>
-  <date value="2022-04-16T12:52:05-05:00"/>
+  <date value="2022-04-16T13:01:50-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>

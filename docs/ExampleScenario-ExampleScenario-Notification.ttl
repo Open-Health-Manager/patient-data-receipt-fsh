@@ -10,12 +10,12 @@
   fhir:Resource.id [ fhir:value "ExampleScenario-Notification"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ExampleScenario-Notification\" </p></div><p><b>url</b>: <code>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Notification</code></p><p><b>version</b>: 0.2.0</p><p><b>status</b>: active</p><p><b>date</b>: 2022-04-16 12:52:05-0500</p><p><b>publisher</b>: Health Manager</p><p><b>contact</b>: Health Manager: <a href=\"https://mitre.sharepoint.com/sites/healthmanager\">https://mitre.sharepoint.com/sites/healthmanager</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ExampleScenario-Notification\" </p></div><p><b>url</b>: <code>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Notification</code></p><p><b>version</b>: 0.2.1</p><p><b>status</b>: active</p><p><b>date</b>: 2022-04-16 01:01:50-0500</p><p><b>publisher</b>: Health Manager</p><p><b>contact</b>: Health Manager: <a href=\"https://mitre.sharepoint.com/sites/healthmanager\">https://mitre.sharepoint.com/sites/healthmanager</a></p></div>"
   ];
   fhir:ExampleScenario.url [ fhir:value "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Notification"];
-  fhir:ExampleScenario.version [ fhir:value "0.2.0"];
+  fhir:ExampleScenario.version [ fhir:value "0.2.1"];
   fhir:ExampleScenario.status [ fhir:value "active"];
-  fhir:ExampleScenario.date [ fhir:value "2022-04-16T12:52:05-05:00"^^xsd:dateTime];
+  fhir:ExampleScenario.date [ fhir:value "2022-04-16T13:01:50-05:00"^^xsd:dateTime];
   fhir:ExampleScenario.publisher [ fhir:value "Health Manager"];
   fhir:ExampleScenario.contact [
      fhir:index 0;
