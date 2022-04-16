@@ -6,7 +6,7 @@ id: mitre.fhir.hm.pdr
 canonical: https://github.com/Open-Health-Manager/patient-data-receipt-ig
 name: HealthDataReceipt
 status: draft
-version: 0.2.0
+version: 0.2.1
 fhirVersion: 4.0.1
 copyrightYear: 2022+
 releaseLabel: ci-build
