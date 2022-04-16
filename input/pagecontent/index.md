@@ -25,4 +25,11 @@ This IG does not specify the details of the encoding of the data and what specif
 
 ### Audience/Expected Users
 
-The audience for this IG is the set of organizations that collect data on an individual that is relevant to their health. If and when organizations are required to provide this information to the individual or their designee, this IG will provide details on how they can accomplish this using FHIR.
+The audience for this IG is the set of organizations that collect data on an individual that is relevant to their health. If and when organizations are required to provide this information to the individual or their designee, this IG will provide details on how they can accomplish this using FHIR.\
+
+
+#### References  
+
+- [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)  
+- [SMART Health Links](https://hackmd.io/kvyVFD5cQK2Bg1_vnXSh_Q)  
+- [SMART Health Card](https://smarthealth.cards/en/)  

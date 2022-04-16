@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="Procedure-CTScan"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2018-10-04T19:42:52.061-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Procedure-CTScan" Version "1" Updated "2018-10-04 07:42:52-0400" </p></div><p><b>status</b>: completed</p><p><b>code</b>: CT Head <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#ct-head)</span></p><p><b>subject</b>: <a href="Patient-janesmith.html">Patient/janesmith: Jane Smith</a> " SMITH"</p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.org/"/>
+      <code value="ct-head"/>
+      <display value="CT Head"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/janesmith"/>
+    <display value="Jane Smith"/>
+  </subject>
+</Procedure>
