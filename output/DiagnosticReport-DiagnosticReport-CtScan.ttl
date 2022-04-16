@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/Open-Health-Manager/patient-data-receipt-ig/DiagnosticReport/DiagnosticReport-CtScan> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "DiagnosticReport-CtScan"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 85430-7}\">Diagnostic imaging report</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Jane Smith </b> (no stated gender), DoB Unknown</td></tr></table><p><b>Report Details</b></p></div>"
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:85430-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "85430-7" ];
+       fhir:Coding.display [ fhir:value "Diagnostic imaging report" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Patient/janesmith>;
+     fhir:Reference.reference [ fhir:value "Patient/janesmith" ];
+     fhir:Reference.display [ fhir:value "Jane Smith" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/Open-Health-Manager/patient-data-receipt-ig/DiagnosticReport/DiagnosticReport-CtScan.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

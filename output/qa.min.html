@@ -1,0 +1,698 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 5, errors = 36, warn = 23, info = 3 -->
+<head>
+  <title>HealthDataReceipt : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for HealthDataReceipt</h1>
+ <p>Generated Sat Apr 16 12:52:32 CDT 2022, FHIR version 4.0.1 for mitre.fhir.hm.pdr#0.2.0 (canonical = <a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig">https://github.com/Open-Health-Manager/patient-data-receipt-ig</a> (<a href="https://github.com/Open-Health-Manager/patient-data-receipt-ig/history.html">history</a>)). See <a href="/users/awatson/code/implementation-guides/patient-data-receipt-fsh/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.114, which is out of date. The current version is v?pub-ver-1? <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = mitre.fhir.hm.pdr, Canonical = https://github.com/Open-Health-Manager/patient-data-receipt-ig</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.2.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> mitre.fhir.hm.pdr</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://github.com/Open-Health-Manager/patient-data-receipt-ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://github.com/Open-Health-Manager/patient-data-receipt-ig (Problem #1 with package-list.json at https://github.com/Open-Health-Manager/patient-data-receipt-ig: Invalid HTTP response 400 from https://github.com/Open-Health-Manager/patient-data-receipt-ig/package-list.json?nocache=1650131524968 (Bad Request) (content in /var/folders/84/bh6qdyp14xgdbsrf8dfdstd80000gn/T/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 5, errors = 36, warn = 23, info = 3</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_appointment-Appointment-1"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/appointment-Appointment-1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_bundle-Receipt-Notification-Payload"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/bundle-Receipt-Notification-Payload</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_claim-Receipt-Purchase"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/claim-Receipt-Purchase</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_diagnosticreport-DiagnosticReport-CtScan"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/diagnosticreport-DiagnosticReport-CtScan</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-Appointment"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-Appointment</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-Notification"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-Notification</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-PurchaseReceipt"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-PurchaseReceipt</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-VaccineCard"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-VaccineCard</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_immunization-Receipt-immunization-record"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/immunization-Receipt-immunization-record</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-DehydratedBundle"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-DehydratedBundle</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-DehydratedDocumentManifest"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-DehydratedDocumentManifest</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-PdrAppointmentReminder"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PdrAppointmentReminder</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-PdrFinancialReceipt"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PdrFinancialReceipt</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-VaccineCard"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-VaccineCard</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_input_resources_bundle-pdr-message"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/input/resources/bundle-pdr-message</b></a></td><td><b>20</b></td><td><b>12</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_input_resources_procedure-pdr-create-colonoscopy"><b>/Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/input/resources/procedure-pdr-create-colonoscopy</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Claim-Receipt-Purchase.html#l312">output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 690</a></b></td><td><b>error</b></td><td><b>The link 'Patient/john-smith' for &quot;Patient/john-smith: John Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Claim-Receipt-Purchase.html#l322">output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 810</a></b></td><td><b>error</b></td><td><b>The link 'Patient/acme-pharmacy' for &quot;Patient/acme-pharmacy: ACME Pharmacy&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Claim-Receipt-Purchase.html#l364">output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 194, column 1506</a></b></td><td><b>error</b></td><td><b>The link 'Medication/zyrtec' for &quot;Medication/zyrtec: Zyrtec&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Claim-Receipt-Purchase.html#l389">output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 194, column 1750</a></b></td><td><b>error</b></td><td><b>The link 'Coverage/self-pay' for &quot;Coverage/self-pay: Self-pay&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Immunization-Receipt-immunization-record.html#l311">output/Immunization-Receipt-immunization-record.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 840</a></b></td><td><b>error</b></td><td><b>The link 'Patient/john-smith' for &quot;Patient/john-smith: John Smith&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_appointment-Appointment-1"> </a>
+<h2><a href="Appointment-Appointment-1.html">fsh-generated/resources/Appointment-Appointment-1.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Appointment: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Appointment (l1/c2)</b></td><td><b>error</b></td><td title="app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed"><b>app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_bundle-Receipt-Notification-Payload"> </a>
+<h2><a href="Bundle-Receipt-Notification-Payload.html">fsh-generated/resources/Bundle-Receipt-Notification-Payload.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/documentmanifest.html">DocumentManifest</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.type (l8/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('datareceipt') is not in the value set 'BundleType' (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/bundle-type#datareceipt in http://hl7.org/fhir/bundle-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(DocumentManifest) (l13/c44)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>DocumentManifest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/DocumentManifest)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(DocumentManifest).content[1] (l19/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Medication/zyrtec'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_claim-Receipt-Purchase"> </a>
+<h2><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Claim: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/claim.html">Claim</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Claim.type.coding[0] (l22/c8)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter in http://terminology.hl7.org/CodeSystem/claim-type for 'http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Claim.use (l9/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('receipt') is not in the value set 'Use' (http://hl7.org/fhir/ValueSet/claim-use|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/claim-use#receipt in http://hl7.org/fhir/claim-use)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Claim.patient (l30/c39)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/john-smith'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Claim.provider (l34/c42)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/acme-pharmacy'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Claim.supportingInfo[0].value.ofType(Reference) (l86/c42)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Medication/zyrtec'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Claim.insurance[0].coverage (l42/c42)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Coverage/self-pay'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_diagnosticreport-DiagnosticReport-CtScan"> </a>
+<h2><a href="DiagnosticReport-DiagnosticReport-CtScan.html">fsh-generated/resources/DiagnosticReport-DiagnosticReport-CtScan.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>DiagnosticReport: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport.code (l10/c16)</b></td><td><b>warning</b></td><td title="The display "Diagnostic imaging report" is not a valid display for the code {http://loinc.org}85430-7 - should be one of ['Diagnostic imaging report - example sections and entries', 'DIR - example sections+entries', '', '事件发生的地方' (zh-CN), '场景' (zh-CN), '环境' (zh-CN), '背景 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.文档' (zh-CN), '文书组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '文件医嘱组' (zh-CN), '医疗文书医嘱组' (zh-CN), '医疗文件医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 影像学诊断报告（诊断成像报告、DIR） - 示例（示范、范例）小节（章节、部分）与条目 报道' (zh-CN), '汇报' (zh-CN), '调查报告' (zh-CN), '报表' (zh-CN), '报导 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套' (zh-CN), 'Panel documentazione Punto nel tempo (episodio) Referto Referto di diagnostica per immagini - sezioni e en' (it-IT)] (from http://tx.fhir.org/r4)"><b>The display &quot;Diagnostic imaging report&quot; is not a valid display for the code {http://loinc.org}85430-7 - should be one of ['Diagnostic imaging report - example sections and entries', 'DIR - example sections+entries', '', '事件发生的地方' (zh-CN), '场景' (zh-CN), '环境' (zh-CN), '背景 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.文档' (zh-CN), '文书组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '文件医嘱组' (zh-CN), '医疗文书医嘱组' (zh-CN), '医疗文件医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 影像学诊断报告（诊断成像报告、DIR） - 示例（示范、范例）小节（章节、部分）与条目 报道' (zh-CN), '汇报' (zh-CN), '调查报告' (zh-CN), '报表' (zh-CN), '报导 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套' (zh-CN), 'Panel documentazione Punto nel tempo (episodio) Referto Referto di diagnostica per immagini - sezioni e en' (it-IT)] (from http://tx.fhir.org/r4)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-Appointment"> </a>
+<h2><a href="ExampleScenario-ExampleScenario-Appointment.html">fsh-generated/resources/ExampleScenario-ExampleScenario-Appointment.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExampleScenario</b></td><td><b>warning</b></td><td title="esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-Notification"> </a>
+<h2><a href="ExampleScenario-ExampleScenario-Notification.html">fsh-generated/resources/ExampleScenario-ExampleScenario-Notification.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExampleScenario</b></td><td><b>warning</b></td><td title="esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-PurchaseReceipt"> </a>
+<h2><a href="ExampleScenario-ExampleScenario-PurchaseReceipt.html">fsh-generated/resources/ExampleScenario-ExampleScenario-PurchaseReceipt.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExampleScenario</b></td><td><b>warning</b></td><td title="esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_examplescenario-ExampleScenario-VaccineCard"> </a>
+<h2><a href="ExampleScenario-ExampleScenario-VaccineCard.html">fsh-generated/resources/ExampleScenario-ExampleScenario-VaccineCard.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExampleScenario</b></td><td><b>warning</b></td><td title="esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_immunization-Receipt-immunization-record"> </a>
+<h2><a href="Immunization-Receipt-immunization-record.html">fsh-generated/resources/Immunization-Receipt-immunization-record.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Immunization.vaccineCode.coding[1] (l16/c8)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Code &quot;49281-0623-78&quot; not found in NDC; The code &quot;49281-0623-78&quot; is not valid in the system http://hl7.org/fhir/sid/ndc; The code provided (http://hl7.org/fhir/sid/ndc#49281-0623-78) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/ndc#49281-0623-78'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Immunization.patient (l24/c39)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/john-smith'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-DehydratedBundle"> </a>
+<h2><a href="StructureDefinition-DehydratedBundle.html">fsh-generated/resources/StructureDefinition-DehydratedBundle.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-DehydratedDocumentManifest"> </a>
+<h2><a href="StructureDefinition-DehydratedDocumentManifest.html">fsh-generated/resources/StructureDefinition-DehydratedDocumentManifest.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-PdrAppointmentReminder"> </a>
+<h2><a href="StructureDefinition-PdrAppointmentReminder.html">fsh-generated/resources/StructureDefinition-PdrAppointmentReminder.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-PdrFinancialReceipt"> </a>
+<h2><a href="StructureDefinition-PdrFinancialReceipt.html">fsh-generated/resources/StructureDefinition-PdrFinancialReceipt.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_fsh-generated_resources_structuredefinition-VaccineCard"> </a>
+<h2><a href="StructureDefinition-VaccineCard.html">fsh-generated/resources/StructureDefinition-VaccineCard.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_input_resources_bundle-pdr-message"> </a>
+<h2><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(5)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/messageheader.html">MessageHeader</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).meta.profile[0] (l27/c12)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[0] (l34/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding) (l39/c63)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[0].url (l50/c12)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[1] (l51/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding) (l56/c63)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[1].url (l67/c12)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[3] (l72/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[3].url (l73/c87)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[5] (l84/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://synthetichealth.github.io/synthea/disability-adjusted-life-years is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).extension[6] (l88/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://synthetichealth.github.io/synthea/quality-adjusted-life-years is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).identifier[4].type (l132/c26)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#DL should be one of 'Driver's license number, Führerscheinnummer' instead of 'Driver's License'"><b>Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#DL should be one of 'Driver's license number, Führerscheinnummer' instead of 'Driver's License'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).communication[0].language (l230/c26)</b></td><td><b>warning</b></td><td title="The display "English" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of ['English (Region=United States)', 'English (United States)'] (from http://tx.fhir.org/r4)"><b>The display &quot;English&quot; is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of ['English (Region=United States)', 'English (United States)'] (from http://tx.fhir.org/r4)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource.ofType(Patient).meta.profile[0] (l216/c27)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2].resource.ofType(Encounter).meta.profile[0] (l250/c12)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Encounter).type[0].coding[0] (l267/c16)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>The display &quot;Encounter for colonoscopy (procedure)&quot; is not a valid display for the code {http://snomed.info/sct}185349003 - should be one of ['Encounter for check up (procedure)', 'Encounter for check up'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#185349003'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2] (l244/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Encounter).subject</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2].resource.ofType(Encounter).subject (l277/c72)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Encounter).meta.profile[0] (l280/c20)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Procedure).meta.profile[0] (l293/c12)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3] (l287/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Procedure).subject</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Procedure).subject (l318/c72)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Procedure).encounter</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Procedure).encounter (l323/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Procedure).meta.profile[0] (l321/c23)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2] (l21/c6)</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry  isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3] (l244/c6)</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry  isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4] (l287/c6)</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry  isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l6/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1] (l21/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2] (l244/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3] (l287/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_patient-data-receipt-fsh_input_resources_procedure-pdr-create-colonoscopy"> </a>
+<h2><a href="Procedure-pdr-create-colonoscopy.html">input/resources/procedure-pdr-create-colonoscopy.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>Procedure: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.meta (l4/c19)</b></td><td><b>error</b></td><td title="Extension_EXTM_Context_Wrong"><b>The modifier extension https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension is not allowed to be used at this point (allowed = e:MessageHeader; this element is [[Procedure.meta, Meta])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.meta.profile[0] (l12/c6)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.subject (l38/c66)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.encounter (l43/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Procedure.meta.profile[0] (l1/c2)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"> </a>
+<h2>BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_Entry_NoFullUrl"> </a>
+<h2>Bundle_BUNDLE_Entry_NoFullUrl</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_Entry_Orphan"> </a>
+<h2>Bundle_BUNDLE_Entry_Orphan</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Entry  isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Entry  isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Entry  isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_Not_Local"> </a>
+<h2>Bundle_BUNDLE_Not_Local</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXTM_Context_Wrong"> </a>
+<h2>Extension_EXTM_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Procedure-pdr-create-colonoscopy.html">input/resources/procedure-pdr-create-colonoscopy.json</a></td><td><b>The modifier extension https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension is not allowed to be used at this point (allowed = e:MessageHeader; this element is [[Procedure.meta, Meta])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>The extension http://synthetichealth.github.io/synthea/disability-adjusted-life-years is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>The extension http://synthetichealth.github.io/synthea/quality-adjusted-life-years is unknown, and not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Receipt-Notification-Payload.html">fsh-generated/resources/Bundle-Receipt-Notification-Payload.json</a></td><td><b>Unable to resolve resource 'Medication/zyrtec'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a></td><td><b>Unable to resolve resource 'Patient/john-smith'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a></td><td><b>Unable to resolve resource 'Patient/acme-pharmacy'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a></td><td><b>Unable to resolve resource 'Medication/zyrtec'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a></td><td><b>Unable to resolve resource 'Coverage/self-pay'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Immunization-Receipt-immunization-record.html">fsh-generated/resources/Immunization-Receipt-immunization-record.json</a></td><td><b>Unable to resolve resource 'Patient/john-smith'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Unable to resolve resource 'urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Procedure-pdr-create-colonoscopy.html">input/resources/procedure-pdr-create-colonoscopy.json</a></td><td><b>Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Procedure-pdr-create-colonoscopy.html">input/resources/procedure-pdr-create-colonoscopy.json</a></td><td><b>Unable to resolve resource 'urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Procedure-pdr-create-colonoscopy.html">input/resources/procedure-pdr-create-colonoscopy.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter in http://terminology.hl7.org/CodeSystem/claim-type for 'http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Immunization-Receipt-immunization-record.html">fsh-generated/resources/Immunization-Receipt-immunization-record.json</a></td><td><b>Code &quot;49281-0623-78&quot; not found in NDC; The code &quot;49281-0623-78&quot; is not valid in the system http://hl7.org/fhir/sid/ndc; The code provided (http://hl7.org/fhir/sid/ndc#49281-0623-78) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/ndc#49281-0623-78'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>The display &quot;Encounter for colonoscopy (procedure)&quot; is not a valid display for the code {http://snomed.info/sct}185349003 - should be one of ['Encounter for check up (procedure)', 'Encounter for check up'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#185349003'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Receipt-Notification-Payload.html">fsh-generated/resources/Bundle-Receipt-Notification-Payload.json</a></td><td><b>The value provided ('datareceipt') is not in the value set 'BundleType' (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/bundle-type#datareceipt in http://hl7.org/fhir/bundle-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Claim-Receipt-Purchase.html">fsh-generated/resources/Claim-Receipt-Purchase.json</a></td><td><b>The value provided ('receipt') is not in the value set 'Use' (http://hl7.org/fhir/ValueSet/claim-use|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/claim-use#receipt in http://hl7.org/fhir/claim-use)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Procedure-Procedure-CTScan.html">fsh-generated/resources/Procedure-Procedure-CTScan.json</a></td><td><b>Code System URI 'http://snomed.org/' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"> </a>
+<h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pdr-message.html">input/resources/bundle-pdr-message.json</a></td><td><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Procedure-pdr-create-colonoscopy.html">input/resources/procedure-pdr-create-colonoscopy.json</a></td><td><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Receipt-Notification-Payload.html">fsh-generated/resources/Bundle-Receipt-Notification-Payload.json</a></td><td><b>DocumentManifest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/DocumentManifest)</b></td>
+   </tr>
+</table>
+</body>
+</html>

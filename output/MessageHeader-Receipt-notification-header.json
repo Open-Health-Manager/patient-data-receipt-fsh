@@ -1,0 +1,23 @@
+{
+  "resourceType": "MessageHeader",
+  "id": "Receipt-notification-header",
+  "meta": {
+    "profile": [
+      "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Receipt-notification-header\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientDataReceiptHeader.html\">PDR - Message Header</a></p></div><p><b>Extension-Account</b>: exampleDemo</p><p><b>event</b>: <code>urn:mitre:healthmanager:pdr</code></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.org/\">http://example.org/</a></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension",
+      "valueString": "exampleDemo"
+    }
+  ],
+  "eventUri": "urn:mitre:healthmanager:pdr",
+  "source": {
+    "endpoint": "http://example.org/"
+  }
+}

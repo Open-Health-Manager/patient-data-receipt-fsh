@@ -1,0 +1,144 @@
+﻿HealthDataReceipt : Validation Results
+=========================================
+
+err = 36, warn = 23, info = 3
+IG Publisher Version: 1.1.114 Out of date - current version is ?pub-ver-1?
+Generated Sat Apr 16 12:52:32 CDT 2022. FHIR version 4.0.1 for mitre.fhir.hm.pdr#0.2.0 (canonical = https://github.com/Open-Health-Manager/patient-data-receipt-ig)
+ Build Errors : 5 / 0 / 0
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/ImplementationGuide-mitre.fhir.hm.pdr : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/appointment-Appointment-1 : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/bundle-Receipt-Notification-Payload : 3 / 0 / 2
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/claim-Receipt-Purchase : 6 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/condition-Condition-Hematoma : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/device-Device-HealthApp : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/device-Device-HealthManager : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/device-Device-HospitalEhr : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/device-Device-Smartphone : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/device-Device-Wearable : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/diagnosticreport-DiagnosticReport-CtScan : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/encounter-Encounter-StJames-1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/encounter-Encounter-Telehealth-1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-Appointment : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-Notification : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-PurchaseReceipt : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/examplescenario-ExampleScenario-VaccineCard : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/immunization-Receipt-immunization-record : 2 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/messageheader-Receipt-notification-header : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/organization-Organization-AcmePharmacy : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/organization-Organization-FastScanRadiology : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/organization-Organization-StJames : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/patient-janesmith : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/patient-johnsmith : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/procedure-Procedure-CTScan : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-AccountExtension : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-DehydratedBundle : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-DehydratedDocumentManifest : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PatientDataReceiptHeader : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PdrAppointmentReminder : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-PdrFinancialReceipt : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/fsh-generated/resources/structuredefinition-VaccineCard : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/input/resources/bundle-pdr-message : 20 / 12 / 7
+ /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/input/resources/procedure-pdr-create-colonoscopy : 4 / 1 / 1
+</table>
+== n/a ==
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 690: The link 'Patient/john-smith' for "Patient/john-smith: John Smith" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 810: The link 'Patient/acme-pharmacy' for "Patient/acme-pharmacy: ACME Pharmacy" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 194, column 1506: The link 'Medication/zyrtec' for "Medication/zyrtec: Zyrtec" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Claim-Receipt-Purchase.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 194, column 1750: The link 'Coverage/self-pay' for "Coverage/self-pay: Self-pay" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/patient-data-receipt-fsh/output/Immunization-Receipt-immunization-record.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 840: The link 'Patient/john-smith' for "Patient/john-smith: John Smith" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-mitre.fhir.hm.pdr.json ==
+== fsh-generated/resources/Appointment-Appointment-1.json ==
+ERROR: Appointment/Appointment-1: Appointment: app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed
+== fsh-generated/resources/Bundle-Receipt-Notification-Payload.json ==
+ERROR: Bundle/Receipt-Notification-Payload: Bundle.type: The value provided ('datareceipt') is not in the value set 'BundleType' (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/bundle-type#datareceipt in http://hl7.org/fhir/bundle-type)
+ERROR: Bundle/Receipt-Notification-Payload: Bundle.entry[0].resource.ofType(DocumentManifest): DocumentManifest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/DocumentManifest)
+ERROR: Bundle/Receipt-Notification-Payload: Bundle.entry[0].resource.ofType(DocumentManifest).content[1]: Unable to resolve resource 'Medication/zyrtec'
+== fsh-generated/resources/Claim-Receipt-Purchase.json ==
+ERROR: Claim/Receipt-Purchase: Claim.type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter in http://terminology.hl7.org/CodeSystem/claim-type for 'http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter'
+ERROR: Claim/Receipt-Purchase: Claim.use: The value provided ('receipt') is not in the value set 'Use' (http://hl7.org/fhir/ValueSet/claim-use|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/claim-use#receipt in http://hl7.org/fhir/claim-use)
+ERROR: Claim/Receipt-Purchase: Claim.patient: Unable to resolve resource 'Patient/john-smith'
+ERROR: Claim/Receipt-Purchase: Claim.provider: Unable to resolve resource 'Patient/acme-pharmacy'
+ERROR: Claim/Receipt-Purchase: Claim.supportingInfo[0].value.ofType(Reference): Unable to resolve resource 'Medication/zyrtec'
+ERROR: Claim/Receipt-Purchase: Claim.insurance[0].coverage: Unable to resolve resource 'Coverage/self-pay'
+== fsh-generated/resources/Condition-Condition-Hematoma.json ==
+== fsh-generated/resources/Device-Device-HealthApp.json ==
+== fsh-generated/resources/Device-Device-HealthManager.json ==
+== fsh-generated/resources/Device-Device-HospitalEhr.json ==
+== fsh-generated/resources/Device-Device-Smartphone.json ==
+== fsh-generated/resources/Device-Device-Wearable.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReport-CtScan.json ==
+WARNING: DiagnosticReport/DiagnosticReport-CtScan: DiagnosticReport.code: The display "Diagnostic imaging report" is not a valid display for the code {http://loinc.org}85430-7 - should be one of ['Diagnostic imaging report - example sections and entries', 'DIR - example sections+entries', '', '事件发生的地方' (zh-CN), '场景' (zh-CN), '环境' (zh-CN), '背景 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.文档' (zh-CN), '文书组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '文件医嘱组' (zh-CN), '医疗文书医嘱组' (zh-CN), '医疗文件医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 影像学诊断报告（诊断成像报告、DIR） - 示例（示范、范例）小节（章节、部分）与条目 报道' (zh-CN), '汇报' (zh-CN), '调查报告' (zh-CN), '报表' (zh-CN), '报导 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套' (zh-CN), 'Panel documentazione Punto nel tempo (episodio) Referto Referto di diagnostica per immagini - sezioni e en' (it-IT)] (from http://tx.fhir.org/r4)
+== fsh-generated/resources/Encounter-Encounter-StJames-1.json ==
+== fsh-generated/resources/Encounter-Encounter-Telehealth-1.json ==
+== fsh-generated/resources/ExampleScenario-ExampleScenario-Appointment.json ==
+WARNING: ExampleScenario/ExampleScenario-Appointment: ExampleScenario: esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ExampleScenario-ExampleScenario-Notification.json ==
+WARNING: ExampleScenario/ExampleScenario-Notification: ExampleScenario: esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ExampleScenario-ExampleScenario-PurchaseReceipt.json ==
+WARNING: ExampleScenario/ExampleScenario-PurchaseReceipt: ExampleScenario: esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ExampleScenario-ExampleScenario-VaccineCard.json ==
+WARNING: ExampleScenario/ExampleScenario-VaccineCard: ExampleScenario: esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Immunization-Receipt-immunization-record.json ==
+ERROR: Immunization/Receipt-immunization-record: Immunization.vaccineCode.coding[1]: Code "49281-0623-78" not found in NDC; The code "49281-0623-78" is not valid in the system http://hl7.org/fhir/sid/ndc; The code provided (http://hl7.org/fhir/sid/ndc#49281-0623-78) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/ndc#49281-0623-78'
+ERROR: Immunization/Receipt-immunization-record: Immunization.patient: Unable to resolve resource 'Patient/john-smith'
+== fsh-generated/resources/MessageHeader-Receipt-notification-header.json ==
+== fsh-generated/resources/Organization-Organization-AcmePharmacy.json ==
+== fsh-generated/resources/Organization-Organization-FastScanRadiology.json ==
+== fsh-generated/resources/Organization-Organization-StJames.json ==
+== fsh-generated/resources/Patient-janesmith.json ==
+== fsh-generated/resources/Patient-johnsmith.json ==
+== fsh-generated/resources/Procedure-Procedure-CTScan.json ==
+INFORMATION: Procedure/Procedure-CTScan: Procedure.code.coding[0]: Code System URI 'http://snomed.org/' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-AccountExtension.json ==
+== fsh-generated/resources/StructureDefinition-DehydratedBundle.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedBundle'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DehydratedDocumentManifest.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PatientDataReceiptHeader.json ==
+== fsh-generated/resources/StructureDefinition-PdrAppointmentReminder.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PdrFinancialReceipt.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-VaccineCard.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard'): The Implementation Guide contains no examples for this profile
+== input/resources/bundle-pdr-message.json ==
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
+INFORMATION: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+INFORMATION: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[3]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[3].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[5]: The extension http://synthetichealth.github.io/synthea/disability-adjusted-life-years is unknown, and not allowed here
+ERROR: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).extension[6]: The extension http://synthetichealth.github.io/synthea/quality-adjusted-life-years is unknown, and not allowed here
+WARNING: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).identifier[4].type: Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#DL should be one of 'Driver's license number, Führerscheinnummer' instead of 'Driver's License'
+WARNING: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).communication[0].language: The display "English" is not a valid display for the code {urn:ietf:bcp:47}en-US - should be one of ['English (Region=United States)', 'English (United States)'] (from http://tx.fhir.org/r4)
+WARNING: Bundle/pdr-message: Bundle.entry[1].resource.ofType(Patient).meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+ERROR: Bundle/pdr-message: Bundle.entry[2].resource.ofType(Encounter).meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' does not resolve
+WARNING: Bundle/pdr-message: Bundle.entry[2].resource.ofType(Encounter).type[0].coding[0]: The display "Encounter for colonoscopy (procedure)" is not a valid display for the code {http://snomed.info/sct}185349003 - should be one of ['Encounter for check up (procedure)', 'Encounter for check up'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#185349003'
+ERROR: Bundle/pdr-message: Bundle.entry[2]: Bundle entry missing fullUrl
+WARNING: Bundle/pdr-message: Bundle.entry[2].resource.ofType(Encounter).subject: URN reference is not locally contained within the bundle urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526
+ERROR: Bundle/pdr-message: Bundle.entry[2].resource.ofType(Encounter).subject: Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'
+WARNING: Bundle/pdr-message: Bundle.entry[2].resource.ofType(Encounter).meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+ERROR: Bundle/pdr-message: Bundle.entry[3].resource.ofType(Procedure).meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve
+ERROR: Bundle/pdr-message: Bundle.entry[3]: Bundle entry missing fullUrl
+WARNING: Bundle/pdr-message: Bundle.entry[3].resource.ofType(Procedure).subject: URN reference is not locally contained within the bundle urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526
+ERROR: Bundle/pdr-message: Bundle.entry[3].resource.ofType(Procedure).subject: Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'
+WARNING: Bundle/pdr-message: Bundle.entry[3].resource.ofType(Procedure).encounter: URN reference is not locally contained within the bundle urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c
+ERROR: Bundle/pdr-message: Bundle.entry[3].resource.ofType(Procedure).encounter: Unable to resolve resource 'urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c'
+WARNING: Bundle/pdr-message: Bundle.entry[3].resource.ofType(Procedure).meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Bundle/pdr-message: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/pdr-message: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/pdr-message: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/pdr-message: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pdr-message: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pdr-message: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pdr-message: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== input/resources/procedure-pdr-create-colonoscopy.json ==
+ERROR: Procedure/pdr-create-colonoscopy: Procedure.meta: The modifier extension https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension is not allowed to be used at this point (allowed = e:MessageHeader; this element is [[Procedure.meta, Meta])
+ERROR: Procedure/pdr-create-colonoscopy: Procedure.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve
+ERROR: Procedure/pdr-create-colonoscopy: Procedure.subject: Unable to resolve resource 'urn:uuid:71a8b156-760b-df6b-859e-eefc7932a526'
+ERROR: Procedure/pdr-create-colonoscopy: Procedure.encounter: Unable to resolve resource 'urn:uuid:ee6beac6-aaaa-957c-767e-1e1caa5c816c'
+WARNING: Procedure/pdr-create-colonoscopy: Procedure.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
