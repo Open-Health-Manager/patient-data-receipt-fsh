@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
   fhir:ImplementationGuide.name [ fhir:value "HealthDataReceipt"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-16T13:01:50-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-18T01:21:56-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Manager"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -550,7 +550,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-Appointment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Appointment" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 18;
        fhir:Element.extension [
@@ -564,7 +564,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-Notification" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Push Notification" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
        fhir:Element.extension [
@@ -578,7 +578,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-PurchaseReceipt" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Purchase Receipt" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
        fhir:Element.extension [
@@ -592,7 +592,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleScenario-VaccineCard" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario:  Vaccine Card" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;
        fhir:Element.extension [

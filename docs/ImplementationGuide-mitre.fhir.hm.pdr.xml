@@ -9,7 +9,7 @@
   <version value="0.2.1"/>
   <name value="HealthDataReceipt"/>
   <status value="draft"/>
-  <date value="2022-04-16T13:01:50-05:00"/>
+  <date value="2022-04-18T01:21:56-05:00"/>
   <publisher value="Health Manager"/>
   <contact>
     <name value="Health Manager"/>
@@ -394,7 +394,7 @@
       </reference>
       <name value="ExampleScenario-Appointment"/>
       <description value="Example Scenario:  Appointment"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -405,7 +405,7 @@
       </reference>
       <name value="ExampleScenario-Notification"/>
       <description value="Example Scenario:  Push Notification"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -416,7 +416,7 @@
       </reference>
       <name value="ExampleScenario-PurchaseReceipt"/>
       <description value="Example Scenario:  Purchase Receipt"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -427,7 +427,7 @@
       </reference>
       <name value="ExampleScenario-VaccineCard"/>
       <description value="Example Scenario:  Vaccine Card"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

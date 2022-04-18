@@ -3,12 +3,12 @@
   "id": "ExampleScenario-PurchaseReceipt",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ExampleScenario-PurchaseReceipt\" </p></div><p><b>url</b>: <code>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-PurchaseReceipt</code></p><p><b>version</b>: 0.2.1</p><p><b>status</b>: active</p><p><b>date</b>: 2022-04-16 01:01:50-0500</p><p><b>publisher</b>: Health Manager</p><p><b>contact</b>: Health Manager: <a href=\"https://mitre.sharepoint.com/sites/healthmanager\">https://mitre.sharepoint.com/sites/healthmanager</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ExampleScenario-PurchaseReceipt\" </p></div><p><b>url</b>: <code>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-PurchaseReceipt</code></p><p><b>version</b>: 0.2.1</p><p><b>status</b>: active</p><p><b>date</b>: 2022-04-18 01:21:56-0500</p><p><b>publisher</b>: Health Manager</p><p><b>contact</b>: Health Manager: <a href=\"https://mitre.sharepoint.com/sites/healthmanager\">https://mitre.sharepoint.com/sites/healthmanager</a></p></div>"
   },
   "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-PurchaseReceipt",
   "version": "0.2.1",
   "status": "active",
-  "date": "2022-04-16T13:01:50-05:00",
+  "date": "2022-04-18T01:21:56-05:00",
   "publisher": "Health Manager",
   "contact": [
     {

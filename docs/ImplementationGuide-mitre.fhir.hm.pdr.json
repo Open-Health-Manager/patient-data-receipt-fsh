@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "HealthDataReceipt",
   "status": "draft",
-  "date": "2022-04-16T13:01:50-05:00",
+  "date": "2022-04-18T01:21:56-05:00",
   "publisher": "Health Manager",
   "contact": [
     {
@@ -567,7 +567,7 @@
         },
         "name": "ExampleScenario-Appointment",
         "description": "Example Scenario:  Appointment",
-        "exampleBoolean": true
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -581,7 +581,7 @@
         },
         "name": "ExampleScenario-Notification",
         "description": "Example Scenario:  Push Notification",
-        "exampleBoolean": true
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -595,7 +595,7 @@
         },
         "name": "ExampleScenario-PurchaseReceipt",
         "description": "Example Scenario:  Purchase Receipt",
-        "exampleBoolean": true
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -609,7 +609,7 @@
         },
         "name": "ExampleScenario-VaccineCard",
         "description": "Example Scenario:  Vaccine Card",
-        "exampleBoolean": true
+        "exampleBoolean": false
       },
       {
         "extension": [
