@@ -18,6 +18,7 @@ publisher:
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 menu:
   Home: index.html
   Use Cases: usecases.html
