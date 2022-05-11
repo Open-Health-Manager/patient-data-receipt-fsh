@@ -1,6 +1,6 @@
-# patient-data-receipt-fsh
+# patient-data-receipt-ig
 
-[Current Build](https://open-health-manager.github.io/patient-data-receipt-fsh/index.html)  
+[Current Build](https://open-health-manager.github.io/patient-data-receipt-ig/index.html)  
 
 
 
