@@ -13,15 +13,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
+      - name: Cache contents of ~/.fhir for docker volume
+        id: fhir-cache
+        uses: actions/cache@v3
         with:
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
-
-      - name: Run the IG publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
+          path: ~/.fhir
+          key: ${{ runner.os }}-fhir    
+          
+      - name: Run the build process with Docker
+        uses: addnab/docker-run-action@v3
         with:
-          args: java -jar ./input-cache/publisher.jar publisher -ig .
+          image: hl7fhir/ig-publisher-base:latest
+          options: -v ${{ github.workspace }}:/home/publisher/ig -v /.fhir:/home/publisher/.fhir
+          run: |
+            _updatePublisher.sh
+            java -jar ./input-cache/publisher.jar publisher -ig .
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -41,5 +47,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
-          destination_dir: ${{ github.ref }}
+          destination_dir: ${{ github.ref_name }}
           keep_files: true
