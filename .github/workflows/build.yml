@@ -17,7 +17,7 @@ jobs:
         id: fhir-cache
         uses: actions/cache@v3
         with:
-          path: ~/.fhir
+          path: /.fhir
           key: ${{ runner.os }}-fhir    
           
       - name: Run the build process with Docker
