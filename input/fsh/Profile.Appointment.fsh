@@ -3,6 +3,6 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 Profile: PdrAppointmentReminder
 Parent: Appointment
-Title: "PDR - Appointment Reminder"
+Title: "Appointment"
 Description: "Data receipt for a scheduled appointment.  Analogous to an appointment reminder business card."
-
+* participant.actor 1..1 MS 
