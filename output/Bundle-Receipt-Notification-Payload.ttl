@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/Receipt-Notification-Payload> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Receipt-Notification-Payload"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-10-04T19:42:52.061-04:00"^^xsd:dateTime ]
+  ];
+  fhir:Bundle.type [ fhir:value "datareceipt"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://localhost:3000/baseR4/Claim/claim-johnsmith-zyrtec" ];
+     fhir:Bundle.entry.resource <http://localhost:3000/baseR4/Claim/claim-johnsmith-zyrtec>
+  ] .
+
+<http://localhost:3000/baseR4/Claim/claim-johnsmith-zyrtec> a fhir:DocumentManifest;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DocumentManifest</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"></div><p><b>content</b>: </p><ul><li><a href=\"Claim/claim-johnsmith-zyrtec\">Claim/claim-johnsmith-zyrtec: Purchase receipt for Zyrtec</a></li><li><a href=\"Medication/zyrtec\">Medication/zyrtec: Zyrtec</a></li></ul></div>"
+  ];
+  fhir:DocumentManifest.content [
+     fhir:index 0;
+     fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Claim/claim-johnsmith-zyrtec>;
+     fhir:Reference.reference [ fhir:value "Claim/claim-johnsmith-zyrtec" ];
+     fhir:Reference.display [ fhir:value "Purchase receipt for Zyrtec" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://github.com/Open-Health-Manager/patient-data-receipt-ig/Medication/zyrtec>;
+     fhir:Reference.reference [ fhir:value "Medication/zyrtec" ];
+     fhir:Reference.display [ fhir:value "Zyrtec" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/Open-Health-Manager/patient-data-receipt-ig/Bundle/Receipt-Notification-Payload.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,24 @@
+{
+  "resourceType": "ExampleScenario",
+  "id": "ExampleScenario-Appointment",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ExampleScenario</b><a name=\"ExampleScenario-Appointment\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ExampleScenario \"ExampleScenario-Appointment\" </p></div><p><b>url</b>: <code>https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Appointment</code></p><p><b>version</b>: 0.2.2</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-04 09:22:56-0600</p><p><b>publisher</b>: Health Manager</p><p><b>contact</b>: Health Manager: <a href=\"https://mitre.sharepoint.com/sites/healthmanager\">https://mitre.sharepoint.com/sites/healthmanager</a></p></div>"
+  },
+  "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Appointment",
+  "version": "0.2.2",
+  "status": "active",
+  "date": "2022-10-04T09:22:56-06:00",
+  "publisher": "Health Manager",
+  "contact": [
+    {
+      "name": "Health Manager",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://mitre.sharepoint.com/sites/healthmanager"
+        }
+      ]
+    }
+  ]
+}

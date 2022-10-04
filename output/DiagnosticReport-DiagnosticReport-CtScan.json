@@ -1,0 +1,22 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReport-CtScan",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 85430-7}\">Diagnostic imaging report</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Jane Smith </b> (no stated gender), DoB Unknown</td></tr></table><p><b>Report Details</b></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85430-7",
+        "display": "Diagnostic imaging report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/janesmith",
+    "display": "Jane Smith"
+  }
+}
