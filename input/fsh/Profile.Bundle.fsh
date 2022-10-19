@@ -1,9 +1,27 @@
-// This is a simple example of a FSH file.
-// This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
-Profile: DehydratedBundle
+Profile: PatientDataReceiptBundle
 Parent: Bundle
 Title: "PDR Bundle"
+Description: "Data receipt payload structure containing a Bundle resource, with included data sources."
+* type = #message
+
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "resource.resolve()"
+* entry ^slicing.rules = #open
+* entry ^slicing.ordered = false   // can be omitted, since false is the default
+* entry ^slicing.description = "Slice based on the entry.resource pattern"
+
+* entry contains 
+    messageHeader 1..1 MS and
+    otherResources 0..* 
+
+* entry[messageHeader].resource only MessageHeader
+* entry[messageHeader].resource 1..1 MS
+
+//////////////////////////////////////////////////////////////
+    
+Profile: PatientDataReceiptBundleDehydratedBundle
+Parent: Bundle
+Title: "PDR Dehydrated Bundle"
 Description: "Data receipt payload structure containing a dehydrated Bundle resource, with links to external data sources."
 * type = #message
 
@@ -15,7 +33,7 @@ Description: "Data receipt payload structure containing a dehydrated Bundle reso
 
 * entry contains 
     messageHeader 1..1 MS and
-    primaryPatientResource 1..* MS and
+    primaryPatientResource 0..* MS and
     tableOfContents 1..1 MS and
     calendarAppointment 0..* and
     vaccineCards 0..* and
@@ -24,7 +42,7 @@ Description: "Data receipt payload structure containing a dehydrated Bundle reso
 
 * entry[messageHeader].resource only MessageHeader
 * entry[messageHeader].resource 1..1 MS
-* entry[primaryPatientResource].resource only MessageHeader
+* entry[primaryPatientResource].resource only Patient
 * entry[primaryPatientResource].resource 0..1 MS
 * entry[primaryPatientResource].fullUrl 0..1 MS
 * entry[tableOfContents].resource only DocumentManifest
@@ -42,3 +60,11 @@ Description: "Data receipt payload structure containing a dehydrated Bundle reso
 * entry[otherResources].resource 0..0 MS
 * entry[otherResources].fullUrl 1..1 MS
 
+//////////////////////////////////////////////////////////////
+
+Instance: PatientDataReceiptBundleExample
+InstanceOf: PatientDataReceiptBundle
+Description: "An example patient data receipt bundle"
+* id = "pdr-bundle-example"
+* entry[messageHeader].resource = Receipt-notification-header
+* entry[1].resource = Condition-Hematoma
