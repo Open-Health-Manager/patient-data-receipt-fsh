@@ -7,7 +7,7 @@ Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"
 * status = #active
-* use = #receipt
+* use = #claim
 * created = "2018-10-04"
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal "Normal"
 * type = http://terminology.hl7.org/CodeSystem/claim-type#over-the-counter "Over The Counter"
