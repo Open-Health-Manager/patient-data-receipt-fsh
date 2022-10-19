@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="Receipt-Purchase"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2018-10-04T19:42:52.061-04:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Claim</b><a name="Receipt-Purchase"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Claim "Receipt-Purchase" Version "1" Updated "2018-10-04 07:42:52-0400" </p></div><p><b>status</b>: active</p><p><b>type</b>: Over The Counter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-claim-type.html">Claim Type Codes</a>#over-the-counter)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient/john-smith">Patient/john-smith: John Smith</a></p><p><b>created</b>: 2018-10-04</p><p><b>provider</b>: <a href="Patient/acme-pharmacy">Patient/acme-pharmacy: ACME Pharmacy</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-processpriority.html">Process Priority Codes</a>#normal)</span></p><h3>SupportingInfos</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Medical Care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-ex-benefitcategory.html">Benefit Category Codes</a>#1)</span></td><td><a href="Medication/zyrtec">Medication/zyrtec: Zyrtec</a></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>false</td><td><a href="Coverage/self-pay">Coverage/self-pay: Self-pay</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Expense <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-ex-USCLS.html">USCLS Codes</a>#99555)</span></p><p><b>serviced</b>: 2018-10-04</p><p><b>quantity</b>: 1</p><h3>UnitPrices</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>12.95</td><td>USD</td></tr></table><h3>Nets</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>13.65</td><td>USD</td></tr></table></blockquote><h3>Totals</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>13.65</td><td>USD</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="over-the-counter"/>
+      <display value="Over The Counter"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/john-smith"/>
+    <display value="John Smith"/>
+  </patient>
+  <created value="2018-10-04"/>
+  <provider>
+    <reference value="Patient/acme-pharmacy"/>
+    <display value="ACME Pharmacy"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+      <display value="Normal"/>
+    </coding>
+  </priority>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-benefitcategory"/>
+        <code value="1"/>
+        <display value="Medical Care"/>
+      </coding>
+    </category>
+    <valueReference>
+      <reference value="Medication/zyrtec"/>
+      <display value="Zyrtec"/>
+    </valueReference>
+  </supportingInfo>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="false"/>
+    <coverage>
+      <reference value="Coverage/self-pay"/>
+      <display value="Self-pay"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-USCLS"/>
+        <code value="99555"/>
+        <display value="Expense"/>
+      </coding>
+    </productOrService>
+    <servicedDate value="2018-10-04"/>
+    <quantity>
+      <value value="1"/>
+    </quantity>
+    <unitPrice>
+      <value value="12.95"/>
+      <currency value="USD"/>
+    </unitPrice>
+    <net>
+      <value value="13.65"/>
+      <currency value="USD"/>
+    </net>
+  </item>
+  <total>
+    <value value="13.65"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

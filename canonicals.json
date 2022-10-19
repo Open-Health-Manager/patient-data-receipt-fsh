@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ExampleScenario-Appointment",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Appointment",
+    "version": "0.2.3"
+  },
+  {
+    "id": "ExampleScenario-Notification",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-Notification",
+    "version": "0.2.3"
+  },
+  {
+    "id": "ExampleScenario-PurchaseReceipt",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-PurchaseReceipt",
+    "version": "0.2.3"
+  },
+  {
+    "id": "ExampleScenario-VaccineCard",
+    "type": "ExampleScenario",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ExampleScenario/ExampleScenario-VaccineCard",
+    "version": "0.2.3"
+  },
+  {
+    "id": "mitre.fhir.hm.pdr",
+    "type": "ImplementationGuide",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr",
+    "version": "0.2.3",
+    "name": "HealthDataReceipt"
+  },
+  {
+    "id": "DehydratedDocumentManifest",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/DehydratedDocumentManifest",
+    "version": "0.2.3",
+    "name": "DehydratedDocumentManifest"
+  },
+  {
+    "id": "PatientDataReceiptBundle",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptBundle",
+    "version": "0.2.3",
+    "name": "PatientDataReceiptBundle"
+  },
+  {
+    "id": "PatientDataReceiptBundleDehydratedBundle",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptBundleDehydratedBundle",
+    "version": "0.2.3",
+    "name": "PatientDataReceiptBundleDehydratedBundle"
+  },
+  {
+    "id": "PatientDataReceiptHeader",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PatientDataReceiptHeader",
+    "version": "0.2.3",
+    "name": "PatientDataReceiptHeader"
+  },
+  {
+    "id": "PdrAppointmentReminder",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrAppointmentReminder",
+    "version": "0.2.3",
+    "name": "PdrAppointmentReminder"
+  },
+  {
+    "id": "PdrFinancialReceipt",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/PdrFinancialReceipt",
+    "version": "0.2.3",
+    "name": "PdrFinancialReceipt"
+  },
+  {
+    "id": "VaccineCard",
+    "type": "StructureDefinition",
+    "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/VaccineCard",
+    "version": "0.2.3",
+    "name": "VaccineCard"
+  }
+]

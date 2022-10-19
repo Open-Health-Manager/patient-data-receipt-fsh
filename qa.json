@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/ImplementationGuide/mitre.fhir.hm.pdr",
+  "name": "HealthDataReceipt",
+  "package-id": "mitre.fhir.hm.pdr",
+  "ig-ver": "0.2.3",
+  "date": "Wed, 19 Oct, 2022 19:46:07 +0000",
+  "errs": 49,
+  "warnings": 21,
+  "hints": 8,
+  "version": "4.0.1",
+  "tool": "5.0.0-ballot (3)"
+}
