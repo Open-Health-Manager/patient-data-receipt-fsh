@@ -5,16 +5,15 @@
   "entry": [
     {
       "resource": {
-        "extension": [
-          {
-            "url": "https://github.com/Open-Health-Manager/patient-data-receipt-ig/StructureDefinition/AccountExtension",
-            "valueString": "a394Kutch271"
-          }
-        ],
         "eventUri": "urn:mitre:healthmanager:pdr",
         "source": {
           "endpoint": "http://example.org"
         },
+        "focus": [
+					{
+						"reference": "Patient/pat1"
+					}
+				],
         "resourceType": "MessageHeader"
       }
     },

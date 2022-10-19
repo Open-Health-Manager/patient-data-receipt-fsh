@@ -3,6 +3,6 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 Profile: VaccineCard
 Parent: Immunization
-Title: "PDR - Vaccine Card"
+Title: "Vaccine Card"
 Description: "Data receipt analog of a vaccination card showing proof of viral immunity."
-
+* patient 1..1 MS 

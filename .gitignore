@@ -1,7 +1,10 @@
-.DS_Store
+**/.DS_Store
 Thumbs.db
 /fsh-generated
 /input-cache
-### /output
+/input-cache/publisher.jar
+/output
 /temp
 /template
+.vscode
+.env

@@ -6,7 +6,7 @@ id: mitre.fhir.hm.pdr
 canonical: https://github.com/Open-Health-Manager/patient-data-receipt-ig
 name: HealthDataReceipt
 status: draft
-version: 0.2.2
+version: 0.2.3
 fhirVersion: 4.0.1
 copyrightYear: 2022+
 releaseLabel: ci-build
@@ -24,7 +24,6 @@ menu:
   Use Cases: usecases.html
   Specification:
     Implementation: implementation.html
-    Connectathons: connectathon.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
@@ -35,6 +34,3 @@ resources:
   Bundle/pdr-message:
     name: PDR Message Example
     description: Example of a full patient data receipt message
-  Procedure/pdr-create-colonoscopy:
-    name: PDR RESTful Create Example
-    description: Example of a RESTful create of an individual procedure as a patient data receipt
